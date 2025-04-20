@@ -1,0 +1,3 @@
+[submodule "Packages/LunarFramework"]
+	path = Packages/LunarFramework
+	url = https://github.com/949886/LunarFramework.git
