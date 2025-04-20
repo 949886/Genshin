@@ -1,0 +1,73 @@
+name: Build project
+
+on: 
+  workflow_call:
+
+jobs:
+  # Build
+  buildForAllSupportedPlatforms:
+    name: Build for ${{ matrix.targetPlatform }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        targetPlatform:
+          - StandaloneOSX # Build a macOS standalone (Intel 64-bit).
+          # - StandaloneWindows # Build a Windows standalone.
+          - StandaloneWindows64 # Build a Windows 64-bit standalone.
+          - StandaloneLinux64 # Build a Linux 64-bit standalone.
+          - iOS # Build an iOS player.
+          - Android # Build an Android .apk standalone app.
+          - WebGL # WebGL.
+    steps:
+      # Checkout
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+          submodules: recursive
+
+      # Free disk space
+      - if: matrix.targetPlatform == 'Android' || matrix.targetPlatform == 'WebGL'
+        uses: jlumbroso/free-disk-space@v1.3.1
+
+      # Cache
+      - uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-${{ matrix.targetPlatform }}
+          restore-keys: Library-
+
+      # Build
+      - uses: game-ci/unity-builder@v4
+        env:
+          #UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          targetPlatform: ${{ matrix.targetPlatform }}
+
+      # Compress
+      # - name: Compress Directory
+      #   if: matrix.targetPlatform != 'Android' && matrix.targetPlatform != 'WebGL'
+      #   uses: somaz94/compress-decompress@v1
+      #   with:
+      #     command: compress
+      #     source: build/${{ matrix.targetPlatform }}
+      #     # dest: 'build'
+      #     format: zip
+      - name: Compress directory as zip
+        run: |
+          cd build/${{ matrix.targetPlatform }}
+          sudo zip -r ../${{ matrix.targetPlatform }}.zip *
+
+      - name: Display structure of build files
+        run: ls -R /home/runner/work/
+
+      # Output
+      - name : Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Build-${{ matrix.targetPlatform }}
+          path: build/${{ matrix.targetPlatform }}.zip
