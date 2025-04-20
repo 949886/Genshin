@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 590286dea44f13e4fbea25259632771c, type: 3}
   m_Name: Widgets.g
   m_EditorClassIdentifier: 
-  Prefabs: []
+  Prefabs:
+  - {fileID: 1040625016063779375, guid: aabacd6beb79a644786614295621789a, type: 3}
+  - {fileID: 498991242376639175, guid: cab492afe31353d4aa721c22d4ca32ed, type: 3}
+  - {fileID: 5711967660981837936, guid: c3dc8e32bc0cb3b4c83d876e18ae0fc6, type: 3}
+  - {fileID: 8605056376294139157, guid: 2967fa821446f1549be2f712e2567646, type: 3}
+  - {fileID: 3602125835548905396, guid: 8d8ff971562e09242a7328fe57647c0b, type: 3}

@@ -212,6 +212,9 @@ MonoBehaviour:
   skyOcclusionIntensityMultiplier:
     m_OverrideState: 1
     m_Value: 1
+  worldOffset:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0}
 --- !u!114 &-4265594550798265172
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -234,6 +237,31 @@ MonoBehaviour:
   gain:
     m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1, w: 0}
+--- !u!114 &-3789837480012215430
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b065805f0c20d0946afc33f94ae2f89d, type: 3}
+  m_Name: ColorGradingVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  useTonemapping:
+    m_OverrideState: 1
+    m_Value: 0
+  exposure:
+    m_OverrideState: 1
+    m_Value: 1
+  contrast:
+    m_OverrideState: 1
+    m_Value: 0
+  saturation:
+    m_OverrideState: 1
+    m_Value: 0
 --- !u!114 &-3662163770687072622
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -432,8 +460,9 @@ MonoBehaviour:
   - {fileID: 1499836630459272380}
   - {fileID: 4314193772838714550}
   - {fileID: -4988849469646424969}
-  - {fileID: -3273916556383874502}
-  - {fileID: 4485290304604986884}
+  - {fileID: 7168132076264952396}
+  - {fileID: 5592138060866269303}
+  - {fileID: -3789837480012215430}
 --- !u!114 &1358255049221428916
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -844,6 +873,86 @@ MonoBehaviour:
   contribution:
     m_OverrideState: 1
     m_Value: 0
+--- !u!114 &5592138060866269303
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76dafa8030f42e648a782b9ab29b6ccb, type: 3}
+  m_Name: BloomVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  mode:
+    m_OverrideState: 1
+    m_Value: 0
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0.7
+  intensity:
+    m_OverrideState: 1
+    m_Value: 1.5
+  weights:
+    m_OverrideState: 1
+    m_Value: {x: 0.25, y: 0.25, z: 0.25, w: 0.25}
+  color:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  blurRadius:
+    m_OverrideState: 1
+    m_Value: 2
+  downSampleScale:
+    m_OverrideState: 1
+    m_Value: 0.5
+--- !u!114 &7168132076264952396
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: defe3efb56c1bc943a6bfb504a00dc77, type: 3}
+  m_Name: UnderwaterSettings
+  m_EditorClassIdentifier: 
+  active: 1
+  startDistance:
+    m_OverrideState: 1
+    m_Value: 0
+  fogDensity:
+    m_OverrideState: 1
+    m_Value: 20
+  heightFogDepth:
+    m_OverrideState: 1
+    m_Value: 25
+  heightFogDensity:
+    m_OverrideState: 1
+    m_Value: 1
+  heightFogBrightness:
+    m_OverrideState: 1
+    m_Value: 0.6
+  fogBrightness:
+    m_OverrideState: 1
+    m_Value: 1
+  subsurfaceStrength:
+    m_OverrideState: 1
+    m_Value: 1
+  causticsStrength:
+    m_OverrideState: 1
+    m_Value: 1
+  distortionStrength:
+    m_OverrideState: 1
+    m_Value: 0.25
+  distortionFrequency:
+    m_OverrideState: 1
+    m_Value: 0.75
+  distortionSpeed:
+    m_OverrideState: 1
+    m_Value: 0.5
 --- !u!114 &9007170596624140001
 MonoBehaviour:
   m_ObjectHideFlags: 3

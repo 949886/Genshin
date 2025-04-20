@@ -391,6 +391,15 @@
       },
       "url": "https://packages.unity.com"
     },
+    "jutps": {
+      "version": "https://github.com/LunarLibrary/Unity-JTPS.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.inputsystem": "1.7.0"
+      },
+      "hash": "e5ec7d10d01e4e68125cff3b154d4ee14e34386d"
+    },
     "nuget": {
       "version": "file:Nuget",
       "depth": 0,

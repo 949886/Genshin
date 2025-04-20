@@ -427,9 +427,15 @@ MonoBehaviour:
   m_PhysicallyBased:
     m_OverrideState: 1
     m_Value: 0
+  m_AdaptiveSamplingWeight:
+    m_OverrideState: 1
+    m_Value: 0.75
   m_LimitManualRangeNearBlur:
     m_OverrideState: 1
     m_Value: 0
+  coCStabilization:
+    m_OverrideState: 1
+    m_Value: 1
 --- !u!114 &-5929835908174019296
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -701,6 +707,52 @@ MonoBehaviour:
   opacity:
     m_OverrideState: 1
     m_Value: 1
+--- !u!114 &-4809615180246731203
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: defe3efb56c1bc943a6bfb504a00dc77, type: 3}
+  m_Name: UnderwaterSettings
+  m_EditorClassIdentifier: 
+  active: 1
+  startDistance:
+    m_OverrideState: 1
+    m_Value: 0
+  fogDensity:
+    m_OverrideState: 1
+    m_Value: 20
+  heightFogDepth:
+    m_OverrideState: 1
+    m_Value: 25
+  heightFogDensity:
+    m_OverrideState: 1
+    m_Value: 1
+  heightFogBrightness:
+    m_OverrideState: 1
+    m_Value: 0.6
+  fogBrightness:
+    m_OverrideState: 1
+    m_Value: 1
+  subsurfaceStrength:
+    m_OverrideState: 1
+    m_Value: 1
+  causticsStrength:
+    m_OverrideState: 1
+    m_Value: 1
+  distortionStrength:
+    m_OverrideState: 1
+    m_Value: 0.25
+  distortionFrequency:
+    m_OverrideState: 1
+    m_Value: 0.75
+  distortionSpeed:
+    m_OverrideState: 1
+    m_Value: 0.5
 --- !u!114 &-4632820298795512013
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -882,6 +934,9 @@ MonoBehaviour:
   cullingDistance:
     m_OverrideState: 1
     m_Value: 1000
+  minSolidAngle:
+    m_OverrideState: 1
+    m_Value: 4
 --- !u!114 &-2705696521252074382
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -925,6 +980,9 @@ MonoBehaviour:
   skyOcclusionIntensityMultiplier:
     m_OverrideState: 1
     m_Value: 1
+  worldOffset:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0}
 --- !u!114 &-1735701338999940513
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1228,6 +1286,9 @@ MonoBehaviour:
   - {fileID: -5949615165654071013}
   - {fileID: -5929835908174019296}
   - {fileID: 3934938034355866400}
+  - {fileID: -4809615180246731203}
+  - {fileID: 535705997583434489}
+  - {fileID: 1605315161828300061}
 --- !u!114 &448115243408767295
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1355,6 +1416,40 @@ MonoBehaviour:
   m_ObsoleteScrollSpeed:
     m_OverrideState: 1
     m_Value: 1
+--- !u!114 &535705997583434489
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76dafa8030f42e648a782b9ab29b6ccb, type: 3}
+  m_Name: BloomVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  mode:
+    m_OverrideState: 1
+    m_Value: 0
+  threshold:
+    m_OverrideState: 1
+    m_Value: 0.7
+  intensity:
+    m_OverrideState: 1
+    m_Value: 1.5
+  weights:
+    m_OverrideState: 1
+    m_Value: {x: 0.25, y: 0.25, z: 0.25, w: 0.25}
+  color:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  blurRadius:
+    m_OverrideState: 1
+    m_Value: 2
+  downSampleScale:
+    m_OverrideState: 1
+    m_Value: 0.5
 --- !u!114 &567125055780043017
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1544,6 +1639,31 @@ MonoBehaviour:
   m_HighQualityFiltering:
     m_OverrideState: 1
     m_Value: 1
+--- !u!114 &1605315161828300061
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b065805f0c20d0946afc33f94ae2f89d, type: 3}
+  m_Name: ColorGradingVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  useTonemapping:
+    m_OverrideState: 1
+    m_Value: 0
+  exposure:
+    m_OverrideState: 1
+    m_Value: 1
+  contrast:
+    m_OverrideState: 1
+    m_Value: 0
+  saturation:
+    m_OverrideState: 1
+    m_Value: 0
 --- !u!114 &1932259527246508038
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -2616,6 +2736,9 @@ MonoBehaviour:
   tileOpacityThreshold:
     m_OverrideState: 1
     m_Value: 1
+  writeDepthAlphaThreshold:
+    m_OverrideState: 1
+    m_Value: 0
 --- !u!114 &6813618684862353014
 MonoBehaviour:
   m_ObjectHideFlags: 3
