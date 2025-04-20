@@ -1,3 +1,6 @@
 [submodule "Packages/LunarFramework"]
 	path = Packages/LunarFramework
 	url = https://github.com/949886/LunarFramework.git
+[submodule "Assets/Modules/GI"]
+	path = Assets/Modules/GI
+	url = https://github.com/LunarDrive/GI-Models.git
