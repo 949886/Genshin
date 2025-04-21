@@ -219,6 +219,7 @@ QualitySettings:
     - Android
     - iPhone
     - WebGL
+    - Standalone
   - serializedVersion: 4
     name: HDRP Medium
     pixelLightCount: 2
@@ -274,6 +275,7 @@ QualitySettings:
     - Android
     - iPhone
     - WebGL
+    - Standalone
   - serializedVersion: 4
     name: HDRP Low
     pixelLightCount: 2
@@ -329,6 +331,7 @@ QualitySettings:
     - Android
     - iPhone
     - WebGL
+    - Standalone
   m_TextureMipmapLimitGroupNames: []
   m_PerPlatformDefaultQuality:
     Android: 0
@@ -340,7 +343,7 @@ QualitySettings:
     PS5: 1
     Server: 0
     Stadia: 0
-    Standalone: 3
+    Standalone: 0
     WebGL: 0
     Windows Store Apps: 0
     XboxOne: 0
