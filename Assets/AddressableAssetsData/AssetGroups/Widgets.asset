@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Widgets
+  m_EditorClassIdentifier: 
+  m_GroupName: Widgets
+  m_GUID: 807c023b9c8282a4ba7342cfacd5d8d2
+  m_SerializeEntries:
+  - m_GUID: 2967fa821446f1549be2f712e2567646
+    m_Address: global.WidgetChild
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - global
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d8ff971562e09242a7328fe57647c0b
+    m_Address: global.CircularLoadingIndicator
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - global
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aabacd6beb79a644786614295621789a
+    m_Address: global.StatefulWidgetChild
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - global
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3dc8e32bc0cb3b4c83d876e18ae0fc6
+    m_Address: global.WidgetChild
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - global
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cab492afe31353d4aa721c22d4ca32ed
+    m_Address: global.StatefulWidgetChild
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - UI
+    - global
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 5a181d6409b0fc747aabbca36dde88a2, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 9e530f5cd4ade9e45a40525146447b13, type: 2}
+    - {fileID: 11400000, guid: 330341b71e4130047bd987e33a6d776e, type: 2}

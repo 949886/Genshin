@@ -5,6 +5,7 @@
     "com.jasonma.lwgui": "https://github.com/JasonMa0012/LWGUI.git",
     "com.nobi.roundedcorners": "https://github.com/kirevdokimov/Unity-UI-Rounded-Corners.git",
     "com.singularitygroup.hotreload": "git+https://gitlab.hotreload.net/root/hot-reload-releases.git#1.13.6",
+    "com.unity.addressables": "2.4.3",
     "com.unity.ai.navigation": "2.0.7",
     "com.unity.collab-proxy": "2.7.1",
     "com.unity.feature.cinematic": "1.0.0",

@@ -60,29 +60,28 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-## Plugins
 
-# AstarPathfindingProject
+# Packages
+
+## Addressables
+ServerData/
+
+
+# Plugins
+
+## AstarPathfindingProject
 /Assets/Plugins/AstarPathfindingProject/ExampleScenes/
 /Assets/Plugins/AstarPathfindingProject/ExampleScenes.meta
 
-# Chronos
-/Assets/Plugins/Ludiq/Ludiq.Chronos/Example/
-/Assets/Plugins/Ludiq/Ludiq.Chronos/Example.meta
-
-# Doozy
-/Assets/Plugins/Doozy/Examples/
-/Assets/Plugins/Doozy/Examples.meta
-
-# Odin
-# Ignore the auto-generated AOT compatibility dll.
+## Odin
+### Ignore the auto-generated AOT compatibility dll.
 /Assets/Plugins/Sirenix/Assemblies/AOT/*
-# Ignore all unpacked demos.
+### Ignore all unpacked demos.
 /Assets/Plugins/Sirenix/Demos/*
-# But keep the demo packages themselves.
+### But keep the demo packages themselves.
 !/Assets/Plugins/Sirenix/Demos/*.unitypackage 
 
-# Misc
+## Misc
 /Assets/Unity.VisualScripting.Generated/
 /Assets/Unity.VisualScripting.Generated.meta
 /HybridCLRData/

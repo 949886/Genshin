@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Audios
+  m_EditorClassIdentifier: 
+  m_GroupName: Audios
+  m_GUID: 0d995f3011ef8514688f2b7fc52ccaa1
+  m_SerializeEntries:
+  - m_GUID: 034f36a73e086ce4c9d3a1645af6205f
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Heavy_Attack_01.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 041834e6f239ddc4692ebd854e240053
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/Sword_Light_Attack_01.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0d69220c281eb27419750109f765da59
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/Sword_Light_Attack_02.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1a47596c7a9fc9548b8f4184c80acc79
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Climbing_02.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ce6300722d7cbe4ab64c136b54c92ee
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Climbing_04.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3eff133ce04a6454aac62e216ffed3a4
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/Sword_Light_Attack_04.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4bd27a0c4f2830b479b9c832e4c72d9b
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Light_Attack_03.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4fd6b7fb470a78e429019905d0c8cd9b
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Jumping_01.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 52fb5ef0e9cb9b9489ee6330ff9acca5
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Light_Attack_04.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 624e3cdd6ab075444abb76b546e3d100
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Light_Attack_02.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 643c26a30d8225348ae053ed9b861bbd
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Light_Attack_01.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 71b9c369976a732498ca0a2df5fa4539
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Climbing_01.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ea65271ca51e89439264167121a7a2d
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Climbing_05.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 80c24e7c50bf8054c80d670842ec4d45
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Mid_Attack_01.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 820eec138d8877b448aaf5516169da6e
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Mid_Attack_03.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 82c3aaa676479e5428edc5f7f741c4d9
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/Sword_Light_Attack_03.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d23aa3a8cded7340a8dd543f18332db
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Climbing_03.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 91286e3cb09ffa249903ded07db2ddb5
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/Sword_Light_Attack_05.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9f2aa562c1266d745b74382f0c73fd4d
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Heavy_Attack_02.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b93a2263c78637a4bb6b0ad296800320
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Jumping_04.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba6e4e889ce0b814b861bf6f6fbab01d
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Heavy_Attack_03.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d28d5c0e2c117994ca4f400a3edcd2f6
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Jumping_02.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da48b8118e58cb849b512d68895b4e3e
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Mid_Attack_02.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: efb571ddccfe47a47903f320d9b3c8de
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Jumping_03.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f71092e789f765d4f99e88d04e07a415
+    m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Jumping_05.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 5a181d6409b0fc747aabbca36dde88a2, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4c70e3f3884ed984eb49e1f73bbabb7b, type: 2}
+    - {fileID: 11400000, guid: 49f521eeedc6c354b9ada2b1afe7615d, type: 2}
