@@ -1,0 +1,30 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+
+# About this project 
+
+This game is is an open-world action RPG like Genshin Impact.
+
+## Development Environment
+
+- Engine: Unity 6
+- Language: C#
+- Used additional packages:
+	- Addressables
+	- Input System
+	- TextMesh Pro
+
+# Rules
+
+## Common Guidelines
+
+1. Think slowly, step by step, and outline your reasoning.
+2. You should fix all errors before you finish your answer.
+3. Use unity online document if necessary.
+4. Use the wiki site to implement the features of the game if you have no idea about the game, for example:
+	- The Genshin Impack game wiki: https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki
+   
