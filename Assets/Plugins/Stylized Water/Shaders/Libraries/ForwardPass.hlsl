@@ -14,6 +14,10 @@
 
 #define COLLAPSIBLE_GROUP 1
 
+#if UNDERWATER_ENABLED
+#include "../Underwater/UnderwaterShading.hlsl"
+#endif
+
 struct SceneData
 {
 	float4 positionSS;

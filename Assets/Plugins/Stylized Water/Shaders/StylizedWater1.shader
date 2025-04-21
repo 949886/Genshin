@@ -196,7 +196,7 @@ Shader "Universal Render Pipeline/FX/Stylized Water 1"
 
 			//Will be stripped, if extensions aren't installed
 			#pragma multi_compile _ UNDERWATER_ENABLED
-			#pragma multi_compile _ MODIFIERS_ENABLED
+			// #pragma multi_compile _ MODIFIERS_ENABLED
 			//#pragma multi_compile _ WAVE_SIMULATION
 
 			#if !_ADVANCED_SHADING

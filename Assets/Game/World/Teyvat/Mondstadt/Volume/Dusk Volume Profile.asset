@@ -103,7 +103,7 @@ MonoBehaviour:
     m_Value: {r: 0, g: 0.12452835, b: 0.2264151, a: 1}
   balance:
     m_OverrideState: 1
-    m_Value: 100
+    m_Value: -100
 --- !u!114 &-4124063803454601646
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Daytime Volume Profile
+  m_Name: Dusk Volume Profile
   m_EditorClassIdentifier: 
   components:
   - {fileID: 5676146291978321531}
