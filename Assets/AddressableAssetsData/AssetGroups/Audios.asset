@@ -15,6 +15,13 @@ MonoBehaviour:
   m_GroupName: Audios
   m_GUID: 0d995f3011ef8514688f2b7fc52ccaa1
   m_SerializeEntries:
+  - m_GUID: 0224d11ebc2c7b64a80e4ca3ad9b6f7e
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Stones/WAV
+      Stone Footsteps Alternative/Footsteps-on-stone02.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 034f36a73e086ce4c9d3a1645af6205f
     m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Heavy_Attack_01.ogg
     m_ReadOnly: 0
@@ -27,8 +34,74 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 056181fd3dae8b8418c192994e2f862a
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Tiles/WAV
+      Footsteps Tiles Alternatives/Footstep-on-tiles01.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 057783b2d4cbc374791b24a43743bdc8
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Grass/WAV
+      Grass Footsteps Alternative/Footsteps-on-grass03.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0c5fe3122bc503e46a6d4c36aedbb73f
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Bolt Sliding.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0c892e02b9ac99b45b954ec8001ca3db
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
+      Alternatives/Bolt Sliding.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0d022e4f5b405d742b4e7997c5992d6a
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Concrete/Footstep
+      on Concrete 01 OGG.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0d69220c281eb27419750109f765da59
     m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/Sword_Light_Attack_02.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e2b55af198c948479a09e76cbf84561
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/FX Sounds WAV Alternatives/Strong
+      Hit.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 156dd06212b561940a97770ff7eb657e
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Grass/Footsteps-on-grass02.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1679d154fe30d7641983a6a95c0a508b
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
+      Alternatives/submachine-gun-shot-1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 17534bbf483d6194e802ccd8f011b494
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Reload.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 196174c6690290c46b18708bc8352d1c
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Grass/Footsteps-on-grass03.ogg
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -39,8 +112,86 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1b6142e271bcd2e42a37e5bcf469256a
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/pistol-shot-1.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1ce6300722d7cbe4ab64c136b54c92ee
     m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Climbing_04.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1f97e96c6a43950469f0841f3a2dd8eb
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Concrete/Footstep
+      on Concrete 04 OGG.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 20ccc5dfccee8304095ba98e0edb44f2
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
+      Alternatives/pistol-shot-1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 26f502cf42482a44996df100ebd487b4
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Tiles/Footstep-on-tiles04.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b6103b55d7f3cd44a02647e0c901b9e
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/FX Sounds WAV Alternatives/madpancake_hit-impact.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c178035da5922747a71569750025f46
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/desert-eagle-1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d0ebe34c6831bc49b6d7d1c6280cac3
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/Strong Hit.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3156f0f12dd43354fbf3c92dc65d94c4
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Grass/WAV
+      Grass Footsteps Alternative/Footsteps-on-grass01.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 356e0ac29331b9347a5af9f8079e47d2
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/FX Sounds WAV Alternatives/gameaudio_spacey-1uppower-up.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 376f0fafde92b5f4bb5f243bc4ba3239
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Concrete/WAV
+      Alternatives/Footstep on Concrete 02 WAV.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 381e8374fcf1a434686e13949eace255
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
+      Alternatives/0-weapon-equip.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3cbe89c4228d91640862aad57861d180
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Concrete/WAV
+      Alternatives/Footstep on Concrete 03 WAV.wav
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -51,8 +202,28 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 410c13fd0e44eed40b4e8e43ed882ae6
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
+      Alternatives/desert-eagle-1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a79d54398e05cf4ea49da27b218e8f8
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
+      Alternatives/ShotgunShot.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4bd27a0c4f2830b479b9c832e4c72d9b
     m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Light_Attack_03.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c809cb150ac6524fa03e1a56d188974
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Stones/Footsteps-on-stone04.ogg
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -69,8 +240,41 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 543e41d8c5124f348891caf421aa1514
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Stones/WAV
+      Stone Footsteps Alternative/Footsteps-on-stone01.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 54447728ce511874d859593d5d94e697
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Tiles/Footstep-on-tiles02.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 552ef03bc34126f4a9664ffa15e18a3e
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Stones/Footsteps-on-stone01.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 59868adb7d0316640972dc54e0bac5d7
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
+      Alternatives/Reload.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 624e3cdd6ab075444abb76b546e3d100
     m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Light_Attack_02.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6260e243cfde3cd449f71dc4323d9a2d
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Concrete/WAV
+      Alternatives/Footstep on Concrete 01 WAV.wav
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -81,8 +285,54 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 66feb496a3228bc498296ea0c505919e
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
+      Alternatives/submachine-gun-shot-2.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 68bfc9eea80c1fa4f8b6c67c39b0d632
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Stones/Footsteps-on-stone03.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 715698226d8df724785ab9db90d2775f
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Concrete/Footstep
+      on Concrete 02 OGG.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 71b9c369976a732498ca0a2df5fa4539
     m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Climbing_01.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 78e2ce3c64e256742a7439d674f2c5d7
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Concrete/Footstep
+      on Concrete 03 OGG.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7b54595b170a2664fa7ef19fb52d52be
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/ShotgunShot.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d6c4c413e2993648836914486367399
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Grass/Footsteps-on-grass01.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e92ffc9aaa5e62428e64f07f2bed43c
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
+      Alternatives/empty-gun-shot.wav
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -111,8 +361,33 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8424d09e9771ce44c8334448852a437d
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/FX Sounds WAV Alternatives/bullet-hit.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 861dbffbe1d9faa459d8b75e097b35e9
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
+      Alternatives/RifleShot.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cd46d534bac50e47ac2ce48de6e57e1
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/submachine-gun-shot-3.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8d23aa3a8cded7340a8dd543f18332db
     m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Climbing_03.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9113d32e36fc0c747948b20eef11e3a9
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Stones/Footsteps-on-stone02.ogg
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -123,8 +398,109 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 997524fb5f174464abcbee383575b094
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/submachine-gun-shot-2.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b7426b90bc845a42b6aa7130b6b0834
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Grass/Footsteps-on-grass04.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c150bb46c8ec7740b22cd8701e9937b
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Tiles/WAV
+      Footsteps Tiles Alternatives/Footstep-on-tiles02.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c2f28c118e432c41adfd5df1055c209
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/bullet-hit.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9eee60d2320f2dd4e9e27a9911829778
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/hit-marker.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9f2aa562c1266d745b74382f0c73fd4d
     m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Heavy_Attack_02.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9f9f0655c131bf345808d126ea4d312a
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Grass/WAV
+      Grass Footsteps Alternative/Footsteps-on-grass04.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a3a3a8e85dc037d4ba055b5fd525a4dc
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/Metal hitting.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ad701e11e15b7fa41b143ef41f25409c
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/UI/rob_marion__gasp_ui_notification_6.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ad91f6dd1877ac24eaa9f10474597ced
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Tiles/Footstep-on-tiles03.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: af00d6e87d147f14096a0504b8f3e52e
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/PistolShot.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b1392c648fe278e438572185b1a2c8b1
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Concrete/WAV
+      Alternatives/Footstep on Concrete 04 WAV.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b1885c3a1ee48fb47aa212a8e35b1dde
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Stones/WAV
+      Stone Footsteps Alternative/Footsteps-on-stone03.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b22ae568d9eb70e4d89b08df4b711544
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/submachine-gun-shot-4.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b433af3d5f1c5df418ff787079d38aff
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
+      Alternatives/PistolShot.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b77e860d6e13ce24fbcd3ce025a40025
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/0-weapon-equip.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b7ef8f1caa4952a4c8269ddc5d908505
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/gameaudio__spacey-1uppower-up.wav
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -141,8 +517,72 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bbd99df7e6302e24eac110d7191f743b
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/FX Sounds WAV Alternatives/Metal
+      hitting.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc611838c5e9fd145a29da90c59ba4a9
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Stones/WAV
+      Stone Footsteps Alternative/Footsteps-on-stone04.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be916288d58d41c449a94afa1c16b3dd
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/empty-gun-shot.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6fe86c98df98cd4ead3e98b8dff8dd8
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Vehicle/carengine-start__prometheus888.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c8667bfbdec9e8b4a8fa0f7b05655187
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Tiles/WAV
+      Footsteps Tiles Alternatives/Footstep-on-tiles04.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf8eb31222c638b408942941d5e0bbf0
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/RifleShot.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d0d28b2abd0a24042927acd95361f7e0
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/madpancake__hit-impact.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d28d5c0e2c117994ca4f400a3edcd2f6
     m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Jumping_02.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d4ca11b41b110a5408e14d099b2bcba7
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Tiles/Footstep-on-tiles01.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d7fb006c661765741b5ba8d54cad1ba5
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
+      Alternatives/submachine-gun-shot-4.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d945ccad6519fd9449e80969be114b55
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Vehicle/motor-loop__soundjoao.wav
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -153,8 +593,41 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e220faab47761ec49b4f4cfc8a4ddf63
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/FX Sounds WAV Alternatives/hit-marker.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed52767da3316ed47bc3c6bc0237f56c
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/submachine-gun-shot-1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef3235fa7227e0744aaed37159b19125
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Grass/WAV
+      Grass Footsteps Alternative/Footsteps-on-grass02.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: efb571ddccfe47a47903f320d9b3c8de
     m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Jumping_03.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f3a0e7699291e864d91adec75913bfc1
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
+      Alternatives/submachine-gun-shot-3.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f63bb01dfe81c324486c3dfe94bbcaae
+    m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Tiles/WAV
+      Footsteps Tiles Alternatives/Footstep-on-tiles03.wav
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio

@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Game/World/Teyvat/Mondstadt/Mondstadt for Nahida.unity
-    guid: 822db964653fac24c8aa62daa25a682f
+    path: Assets/Game/Game.unity
+    guid: 6a48622d0102fba44b98754f4924a7a2
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 7f02d7178cb555f43b99cc7ec092f993, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

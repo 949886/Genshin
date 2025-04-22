@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 6caa8d0352a69b6408fb15e96d90a15b
   m_currentHash:
     serializedVersion: 2
-    Hash: 69cf61e20b75e54314eff893e8d00c21
+    Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 1
   m_CatalogRequestsTimeout: 0
@@ -79,12 +79,12 @@ MonoBehaviour:
       - m_Id: bc315f9c18312264194d5594dd772835
         m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: d60192f96d5b8c745b5afeb91f8ceb00
-        m_Value: 'ServerData/[BuildTarget]'
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: eac72b7f681c24d4bbacb77e0fd9f0ec
-        m_Value: <undefined>
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
     - m_InheritedParent: 
-      m_Id: a95cd75e92601fe4b893fc2072167db3
-      m_ProfileName: Remote
+      m_Id: 2f290f9958ea76f4986987d15c2cdbc7
+      m_ProfileName: Cloudflare
       m_Values:
       - m_Id: 1da0ec7b947f30447ab304a4e71c8790
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
@@ -95,7 +95,35 @@ MonoBehaviour:
       - m_Id: d60192f96d5b8c745b5afeb91f8ceb00
         m_Value: 'ServerData/[BuildTarget]'
       - m_Id: eac72b7f681c24d4bbacb77e0fd9f0ec
-        m_Value: <undefined>
+        m_Value: https://mock.lunareclipse.cc/get
+    - m_InheritedParent: 
+      m_Id: 7d86baec493ce1743ab5c6e2979f6837
+      m_ProfileName: localhost:8083
+      m_Values:
+      - m_Id: 1da0ec7b947f30447ab304a4e71c8790
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 73d08898876242146987aded99bb0554
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: bc315f9c18312264194d5594dd772835
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: d60192f96d5b8c745b5afeb91f8ceb00
+        m_Value: 'ServerData/[BuildTarget]'
+      - m_Id: eac72b7f681c24d4bbacb77e0fd9f0ec
+        m_Value: http://127.0.0.1:8083
+    - m_InheritedParent: 
+      m_Id: ef67da51dd0b93f4fbc5edab43cefa64
+      m_ProfileName: localhost:8787
+      m_Values:
+      - m_Id: 1da0ec7b947f30447ab304a4e71c8790
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 73d08898876242146987aded99bb0554
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: bc315f9c18312264194d5594dd772835
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: d60192f96d5b8c745b5afeb91f8ceb00
+        m_Value: 'ServerData/[BuildTarget]'
+      - m_Id: eac72b7f681c24d4bbacb77e0fd9f0ec
+        m_Value: http://127.0.0.1:8787/get
     m_ProfileEntryNames:
     - m_Id: 1da0ec7b947f30447ab304a4e71c8790
       m_Name: BuildTarget
@@ -131,4 +159,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 58e8c9a39fbb56c43a13da3353b5fc30, type: 2}
   - {fileID: 11400000, guid: 1003648bde15ca24c80198b29143693a, type: 2}
   - {fileID: 11400000, guid: f80bf03e3a6a87d459261921f156851b, type: 2}
-  m_ActiveProfileId: a95cd75e92601fe4b893fc2072167db3
+  m_ActiveProfileId: 2f290f9958ea76f4986987d15c2cdbc7

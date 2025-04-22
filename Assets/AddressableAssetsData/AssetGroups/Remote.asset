@@ -16,7 +16,17 @@ MonoBehaviour:
   m_GUID: b21d0ec313eefbe41b0dd344770096ed
   m_SerializeEntries:
   - m_GUID: 3e072b59281e1e743a72c447a2bbb46e
-    m_Address: "Assets/Modules/GI/Gitignore/Area/Mondstadt/\u8499\u5FB7\u57CE/Mondstadt.blend"
+    m_Address: Mondstadt.blend
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 822db964653fac24c8aa62daa25a682f
+    m_Address: Assets/Game/World/Teyvat/Mondstadt/Mondstadt for Nahida.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a6e4404785c46e428908e48a3a44d07
+    m_Address: Chunk_X0_Y0_Z0
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Default Local Group
   m_GUID: 6caa8d0352a69b6408fb15e96d90a15b
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 501a00d866519104783ef011e8b3d18a
+    m_Address: Assets/Modules/World/World Partition.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5a181d6409b0fc747aabbca36dde88a2, type: 2}
   m_SchemaSet:
