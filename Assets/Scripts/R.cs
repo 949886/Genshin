@@ -11,6 +11,31 @@ namespace R
 {
     public static class Audios
     {
+        public static Asset<AudioClip> SwordLightAttack01 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/Sword_Light_Attack_01.mp3");
+        public static Asset<AudioClip> SwordLightAttack02 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/Sword_Light_Attack_02.mp3");
+        public static Asset<AudioClip> SwordLightAttack03 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/Sword_Light_Attack_03.mp3");
+        public static Asset<AudioClip> SwordLightAttack04 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/Sword_Light_Attack_04.mp3");
+        public static Asset<AudioClip> SwordLightAttack05 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/Sword_Light_Attack_05.mp3");
+        public static Asset<AudioClip> VoJaLumineClimbing01 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Climbing_01.ogg");
+        public static Asset<AudioClip> VoJaLumineClimbing02 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Climbing_02.ogg");
+        public static Asset<AudioClip> VoJaLumineClimbing03 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Climbing_03.ogg");
+        public static Asset<AudioClip> VoJaLumineClimbing04 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Climbing_04.ogg");
+        public static Asset<AudioClip> VoJaLumineClimbing05 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Climbing_05.ogg");
+        public static Asset<AudioClip> VoJaLumineHeavyAttack01 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Heavy_Attack_01.ogg");
+        public static Asset<AudioClip> VoJaLumineHeavyAttack02 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Heavy_Attack_02.ogg");
+        public static Asset<AudioClip> VoJaLumineHeavyAttack03 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Heavy_Attack_03.ogg");
+        public static Asset<AudioClip> VoJaLumineJumping01 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Jumping_01.ogg");
+        public static Asset<AudioClip> VoJaLumineJumping02 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Jumping_02.ogg");
+        public static Asset<AudioClip> VoJaLumineJumping03 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Jumping_03.ogg");
+        public static Asset<AudioClip> VoJaLumineJumping04 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Jumping_04.ogg");
+        public static Asset<AudioClip> VoJaLumineJumping05 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Jumping_05.ogg");
+        public static Asset<AudioClip> VoJaLumineLightAttack01 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Light_Attack_01.ogg");
+        public static Asset<AudioClip> VoJaLumineLightAttack02 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Light_Attack_02.ogg");
+        public static Asset<AudioClip> VoJaLumineLightAttack03 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Light_Attack_03.ogg");
+        public static Asset<AudioClip> VoJaLumineLightAttack04 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Light_Attack_04.ogg");
+        public static Asset<AudioClip> VoJaLumineMidAttack01 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Mid_Attack_01.ogg");
+        public static Asset<AudioClip> VoJaLumineMidAttack02 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Mid_Attack_02.ogg");
+        public static Asset<AudioClip> VoJaLumineMidAttack03 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Mid_Attack_03.ogg");
 
     }
 }
