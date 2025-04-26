@@ -845,6 +845,7 @@ MonoBehaviour:
   DirectionTransform: {fileID: 0}
   DesiredDirection: {x: 0, y: 0, z: 0}
   LocomotionMode: 0
+  SetRigidbodyVelocity: 1
   FireModeMaxTime: 1
   Speed: 3
   RotationSpeed: 3
@@ -858,7 +859,7 @@ MonoBehaviour:
   MovementAffectsWeaponAccuracy: 0
   OnMovePrecision: 4
   LookAtPosition: {x: 0, y: 0, z: 0}
-  RunImpulse: 1
+  SprintingSkill: 1
   GroundAngleDesaceleration: 1
   GroundAngleDesacelerationMultiplier: 1.5
   GroundAngle: 0
@@ -936,6 +937,7 @@ MonoBehaviour:
   CurrentTimeToDisableFireMode: 0
   VehicleInArea: {fileID: 0}
   CharacterHitBoxes: []
+  IsFPS: 1
   IsDead: 0
   DisableAllMove: 0
   CanMove: 1
@@ -970,6 +972,9 @@ MonoBehaviour:
   UseDefaultControllerInput: 1
   AutoRun: 1
   WalkOnRunButton: 1
+  SprintOnRunButton: 0
+  UnlimitedSprintDuration: 0
+  DecreaseSpeedOnJump: 0
   BlockVerticalInput: 0
   BlockHorizontalInput: 0
   BlockFireModeOnCursorVisible: 1
@@ -1298,7 +1303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &664311551
 Transform:
   m_ObjectHideFlags: 0
@@ -2219,31 +2224,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9082929577908625894, guid: de9d7c2cdde28654fac93e93dbde374d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.619232
+      value: 3.1691284
       objectReference: {fileID: 0}
     - target: {fileID: 9082929577908625894, guid: de9d7c2cdde28654fac93e93dbde374d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.1776123
+      value: -7.0646114
       objectReference: {fileID: 0}
     - target: {fileID: 9082929577908625894, guid: de9d7c2cdde28654fac93e93dbde374d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.552442
+      value: 7.734713
       objectReference: {fileID: 0}
     - target: {fileID: 9082929577908625894, guid: de9d7c2cdde28654fac93e93dbde374d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.49084127
+      value: -0.75481015
       objectReference: {fileID: 0}
     - target: {fileID: 9082929577908625894, guid: de9d7c2cdde28654fac93e93dbde374d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.03723255
+      value: 0.04533709
       objectReference: {fileID: 0}
     - target: {fileID: 9082929577908625894, guid: de9d7c2cdde28654fac93e93dbde374d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.867951
+      value: 0.6532698
       objectReference: {fileID: 0}
     - target: {fileID: 9082929577908625894, guid: de9d7c2cdde28654fac93e93dbde374d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.06595313
+      value: 0.038009748
       objectReference: {fileID: 0}
     - target: {fileID: 9082929577908625894, guid: de9d7c2cdde28654fac93e93dbde374d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3824,6 +3829,7 @@ MonoBehaviour:
   CheckerOffset: {x: 0, y: 0, z: 0}
   CheckerRadious: 1
   UseDefaultInputToPickUp: 1
+  AutoEquipPickedUpItems: 1
   HoldTimeToPickUp: 0.5
   ItemToPickUp: {fileID: 0}
   ItemsAround: []
@@ -3886,6 +3892,10 @@ MonoBehaviour:
     m_Bits: 0
   SpineLean: 1
   LeanDirection: 0.2
+  ForwardLeanAxis: 0
+  SidesLeanAxis: 2
+  InvertForwardLean: 0
+  InvertSideLean: 0
 --- !u!114 &1742034190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4051,6 +4061,7 @@ MonoBehaviour:
   DirectionTransform: {fileID: 0}
   DesiredDirection: {x: 0, y: 0, z: 0}
   LocomotionMode: 0
+  SetRigidbodyVelocity: 1
   FireModeMaxTime: 1
   Speed: 3
   RotationSpeed: 3
@@ -4064,7 +4075,7 @@ MonoBehaviour:
   MovementAffectsWeaponAccuracy: 0
   OnMovePrecision: 4
   LookAtPosition: {x: 0, y: 0, z: 0}
-  RunImpulse: 1
+  SprintingSkill: 1
   GroundAngleDesaceleration: 1
   GroundAngleDesacelerationMultiplier: 1.5
   GroundAngle: 0
@@ -4142,6 +4153,7 @@ MonoBehaviour:
   CurrentTimeToDisableFireMode: 0
   VehicleInArea: {fileID: 0}
   CharacterHitBoxes: []
+  IsFPS: 1
   IsDead: 0
   DisableAllMove: 0
   CanMove: 1
@@ -4176,6 +4188,9 @@ MonoBehaviour:
   UseDefaultControllerInput: 1
   AutoRun: 1
   WalkOnRunButton: 1
+  SprintOnRunButton: 0
+  UnlimitedSprintDuration: 0
+  DecreaseSpeedOnJump: 0
   BlockVerticalInput: 0
   BlockHorizontalInput: 0
   BlockFireModeOnCursorVisible: 1

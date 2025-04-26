@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OutlinedNahidaSwingMaterial
+  m_Shader: {fileID: 4800000, guid: 6d641b57ae3f5b0479bf21cf52ff7b20, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _GlowTex:
+        m_Texture: {fileID: 2800000, guid: a2cf82790f7e74c428ade016098c54ad, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a3def965233020b458144abf2845f7ae, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: b6f0ad3d61ebcba489f8d0de4c1fcadb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SymbolTex:
+        m_Texture: {fileID: 2800000, guid: 3b31261f60c8fbc4e9638c27dbc2fac7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaClip: 0.05
+    - _EmissionIntensity: 4.5
+    - _FlowSpeed: 0.3
+    - _Glossiness: 0.8
+    - _GlowPulseMax: 1.5
+    - _GlowPulseMin: 0.7
+    - _GlowPulseSpeed: 1.2
+    - _Metallic: 0.2
+    - _NoiseScale: 2.5
+    - _NoiseStrength: 0.15
+    - _OutlinePulseMax: 1.2
+    - _OutlinePulseMin: 0.8
+    - _OutlinePulseSpeed: 1.5
+    - _OutlineWidth: 0.015
+    m_Colors:
+    - _Color: {r: 0.69411767, g: 0.83137256, b: 0.5254902, a: 0.40784314}
+    - _GlowColor: {r: 0.34285378, g: 1, b: 0, a: 1}
+    - _OutlineColor: {r: 0.6, g: 1, b: 0.6, a: 0.7}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1 
