@@ -48,6 +48,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0905f5074dc10e745bd6827796192f29
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Mid_Attack_01.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0c5fe3122bc503e46a6d4c36aedbb73f
     m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Bolt Sliding.ogg
     m_ReadOnly: 0
@@ -156,6 +162,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c964adf1d378ea42994da1d7717452b
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Light_Attack_04.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2d0ebe34c6831bc49b6d7d1c6280cac3
     m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/Strong Hit.ogg
     m_ReadOnly: 0
@@ -165,6 +177,12 @@ MonoBehaviour:
   - m_GUID: 3156f0f12dd43354fbf3c92dc65d94c4
     m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Grass/WAV
       Grass Footsteps Alternative/Footsteps-on-grass01.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 33bd4ce072e529649bf1cbd83da8b05d
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/jp/VO_JA_Nahida_Light_Attack_07.ogg
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -205,6 +223,12 @@ MonoBehaviour:
   - m_GUID: 410c13fd0e44eed40b4e8e43ed882ae6
     m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
       Alternatives/desert-eagle-1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 49e126222421c9e4baa23cf675b78371
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Light_Attack_05.ogg
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -253,6 +277,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 547ce036042a6f440895c78b91f204e5
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/jp/VO_JA_Nahida_Light_Attack_02.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 552ef03bc34126f4a9664ffa15e18a3e
     m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Stones/Footsteps-on-stone01.ogg
     m_ReadOnly: 0
@@ -262,6 +292,18 @@ MonoBehaviour:
   - m_GUID: 59868adb7d0316640972dc54e0bac5d7
     m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
       Alternatives/Reload.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b1d15483380b2249a2bdc5a478b9c61
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/jp/VO_JA_Nahida_Light_Attack_04.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e51fb2d149338f47b199bfdc62cc167
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Light_Attack_02.ogg
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -311,6 +353,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76b0ff4d38d3a9c4e8853f69dcdd9445
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/jp/VO_JA_Nahida_Light_Attack_06.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 78e2ce3c64e256742a7439d674f2c5d7
     m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Footstep/CC0 Sounds/Concrete/Footstep
       on Concrete 03 OGG.ogg
@@ -343,8 +391,20 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f76627eaa6afcc47bca913071827c9b
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/jp/VO_JA_Nahida_Light_Attack_03.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 80c24e7c50bf8054c80d670842ec4d45
     m_Address: Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Mid_Attack_01.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8123233818384724297f7b5bedc30997
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Mid_Attack_03.ogg
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -370,6 +430,12 @@ MonoBehaviour:
   - m_GUID: 861dbffbe1d9faa459d8b75e097b35e9
     m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/Guns Sounds WAV
       Alternatives/RifleShot.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b68b5201d7fda646ba2242e1d416f4b
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Light_Attack_03.ogg
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -444,6 +510,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a3a3a8e85dc037d4ba055b5fd525a4dc
     m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/Metal hitting.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a8fa8291db0185b43bdcc2d8c608fb36
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Mid_Attack_02.ogg
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -531,6 +603,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc7303fa39efedb4d882f0a2190201da
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Light_Attack_07.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: be916288d58d41c449a94afa1c16b3dd
     m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/empty-gun-shot.wav
     m_ReadOnly: 0
@@ -550,6 +628,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - Audio
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c9cb42278b28c7d4ea49ae0e0d28f2f6
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/jp/VO_JA_Nahida_Light_Attack_01.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce5b9be90be39a14eb7b82690ebff238
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Light_Attack_01.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cf8eb31222c638b408942941d5e0bbf0
     m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/Guns/RifleShot.wav
     m_ReadOnly: 0
@@ -558,6 +648,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d0d28b2abd0a24042927acd95361f7e0
     m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/madpancake__hit-impact.ogg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1ad102a1106b2946937980d7d4bf6e3
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Light_Attack_06.ogg
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio
@@ -595,6 +691,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e220faab47761ec49b4f4cfc8a4ddf63
     m_Address: Packages/jutps/Julhiecio TPS Controller/Audio/FX/FX Sounds WAV Alternatives/hit-marker.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Audio
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e46a0b2e87f61cc48b610d4428c23dd0
+    m_Address: Assets/Avatar/Loli/Catalyst/Nahida/Audio/jp/VO_JA_Nahida_Light_Attack_05.ogg
     m_ReadOnly: 0
     m_SerializedLabels:
     - Audio

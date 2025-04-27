@@ -81,7 +81,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_L
+    path: Bone_Root/Bone_Swing01_L
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -142,7 +142,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_R
+    path: Bone_Root/Bone_Swing01_R
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -194,7 +194,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -219,7 +219,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root
+    path: Bone_Root
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -244,7 +244,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingUp01_M
+    path: Bone_Root/Bone_SwingUp01_M
   m_CompressedRotationCurves: []
   m_EulerCurves: []
   m_PositionCurves:
@@ -317,7 +317,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_L
+    path: Bone_Root/Bone_Swing01_L
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -387,7 +387,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_R
+    path: Bone_Root/Bone_Swing01_R
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -475,7 +475,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -500,7 +500,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root
+    path: Bone_Root
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -525,7 +525,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingUp01_M
+    path: Bone_Root/Bone_SwingUp01_M
   m_ScaleCurves:
   - curve:
       serializedVersion: 2
@@ -551,7 +551,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
   m_FloatCurves: []
   m_PPtrCurves: []
   m_SampleRate: 60
@@ -753,7 +753,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_L
+    path: Bone_Root/Bone_Swing01_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -828,7 +828,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_L
+    path: Bone_Root/Bone_Swing01_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -903,7 +903,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_L
+    path: Bone_Root/Bone_Swing01_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -978,7 +978,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.w
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_L
+    path: Bone_Root/Bone_Swing01_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1044,7 +1044,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_R
+    path: Bone_Root/Bone_Swing01_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1110,7 +1110,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_R
+    path: Bone_Root/Bone_Swing01_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1176,7 +1176,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_R
+    path: Bone_Root/Bone_Swing01_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1242,7 +1242,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.w
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_R
+    path: Bone_Root/Bone_Swing01_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1299,7 +1299,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1356,7 +1356,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1413,7 +1413,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1470,7 +1470,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.w
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1545,7 +1545,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_L
+    path: Bone_Root/Bone_Swing01_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1620,7 +1620,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_L
+    path: Bone_Root/Bone_Swing01_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1695,7 +1695,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_L
+    path: Bone_Root/Bone_Swing01_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1770,7 +1770,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_R
+    path: Bone_Root/Bone_Swing01_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1845,7 +1845,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_R
+    path: Bone_Root/Bone_Swing01_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1920,7 +1920,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_R
+    path: Bone_Root/Bone_Swing01_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2013,7 +2013,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2106,7 +2106,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2199,7 +2199,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2229,7 +2229,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root
+    path: Bone_Root
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2259,7 +2259,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root
+    path: Bone_Root
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2289,7 +2289,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root
+    path: Bone_Root
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2319,7 +2319,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingUp01_M
+    path: Bone_Root/Bone_SwingUp01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2349,7 +2349,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingUp01_M
+    path: Bone_Root/Bone_SwingUp01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2379,7 +2379,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingUp01_M
+    path: Bone_Root/Bone_SwingUp01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2409,7 +2409,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2439,7 +2439,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2469,7 +2469,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2499,7 +2499,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root
+    path: Bone_Root
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2529,7 +2529,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root
+    path: Bone_Root
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2559,7 +2559,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root
+    path: Bone_Root
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2589,7 +2589,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.w
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root
+    path: Bone_Root
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2619,7 +2619,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingUp01_M
+    path: Bone_Root/Bone_SwingUp01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2649,7 +2649,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingUp01_M
+    path: Bone_Root/Bone_SwingUp01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2679,7 +2679,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingUp01_M
+    path: Bone_Root/Bone_SwingUp01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2709,7 +2709,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalRotation.w
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingUp01_M
+    path: Bone_Root/Bone_SwingUp01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2785,7 +2785,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAngles.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_L
+    path: Bone_Root/Bone_Swing01_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2860,7 +2860,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAngles.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_L
+    path: Bone_Root/Bone_Swing01_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -2935,7 +2935,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAngles.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_L
+    path: Bone_Root/Bone_Swing01_L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -3001,7 +3001,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAngles.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_R
+    path: Bone_Root/Bone_Swing01_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -3067,7 +3067,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAngles.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_R
+    path: Bone_Root/Bone_Swing01_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -3133,7 +3133,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAngles.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_Swing01_R
+    path: Bone_Root/Bone_Swing01_R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -3190,7 +3190,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAngles.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -3247,7 +3247,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAngles.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -3304,7 +3304,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAngles.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingDown01_M
+    path: Bone_Root/Bone_SwingDown01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -3334,7 +3334,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAngles.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root
+    path: Bone_Root
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -3364,7 +3364,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAngles.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root
+    path: Bone_Root
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -3394,7 +3394,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAngles.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root
+    path: Bone_Root
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -3424,7 +3424,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAngles.x
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingUp01_M
+    path: Bone_Root/Bone_SwingUp01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -3454,7 +3454,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAngles.y
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingUp01_M
+    path: Bone_Root/Bone_SwingUp01_M
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -3484,7 +3484,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAngles.z
-    path: Swing/SkillObj_Nahida_Swing_Model/Bone_Root/Bone_SwingUp01_M
+    path: Bone_Root/Bone_SwingUp01_M
     classID: 4
     script: {fileID: 0}
     flags: 0

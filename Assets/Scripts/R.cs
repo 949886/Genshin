@@ -36,6 +36,23 @@ namespace R
         public static Asset<AudioClip> VoJaLumineMidAttack01 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Mid_Attack_01.ogg");
         public static Asset<AudioClip> VoJaLumineMidAttack02 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Mid_Attack_02.ogg");
         public static Asset<AudioClip> VoJaLumineMidAttack03 => new("Assets/Avatar/Girl/Sword/Lumine/Audio/jp/VO_JA_Lumine_Mid_Attack_03.ogg");
+        public static Asset<AudioClip> VoJaNahidaLightAttack01 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/jp/VO_JA_Nahida_Light_Attack_01.ogg");
+        public static Asset<AudioClip> VoJaNahidaLightAttack02 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/jp/VO_JA_Nahida_Light_Attack_02.ogg");
+        public static Asset<AudioClip> VoJaNahidaLightAttack03 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/jp/VO_JA_Nahida_Light_Attack_03.ogg");
+        public static Asset<AudioClip> VoJaNahidaLightAttack04 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/jp/VO_JA_Nahida_Light_Attack_04.ogg");
+        public static Asset<AudioClip> VoJaNahidaLightAttack05 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/jp/VO_JA_Nahida_Light_Attack_05.ogg");
+        public static Asset<AudioClip> VoJaNahidaLightAttack06 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/jp/VO_JA_Nahida_Light_Attack_06.ogg");
+        public static Asset<AudioClip> VoJaNahidaLightAttack07 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/jp/VO_JA_Nahida_Light_Attack_07.ogg");
+        public static Asset<AudioClip> VoZhNahidaLightAttack01 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Light_Attack_01.ogg");
+        public static Asset<AudioClip> VoZhNahidaLightAttack02 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Light_Attack_02.ogg");
+        public static Asset<AudioClip> VoZhNahidaLightAttack03 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Light_Attack_03.ogg");
+        public static Asset<AudioClip> VoZhNahidaLightAttack04 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Light_Attack_04.ogg");
+        public static Asset<AudioClip> VoZhNahidaLightAttack05 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Light_Attack_05.ogg");
+        public static Asset<AudioClip> VoZhNahidaLightAttack06 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Light_Attack_06.ogg");
+        public static Asset<AudioClip> VoZhNahidaLightAttack07 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Light_Attack_07.ogg");
+        public static Asset<AudioClip> VoZhNahidaMidAttack01 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Mid_Attack_01.ogg");
+        public static Asset<AudioClip> VoZhNahidaMidAttack02 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Mid_Attack_02.ogg");
+        public static Asset<AudioClip> VoZhNahidaMidAttack03 => new("Assets/Avatar/Loli/Catalyst/Nahida/Audio/zh/VO_ZH_Nahida_Mid_Attack_03.ogg");
 
     }
 }
