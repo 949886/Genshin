@@ -10,8 +10,6 @@ namespace Avatar.Loli.Catalyst.Nahida.Scripts
 {
     public class NahidAnimationStateController : ThirdPersonCharacterAttackBehaviour
     {
-        public int attackIndex = 0;
-        
         public AnimationState State { get; private set; } = AnimationState.Idle;
         public AnimationState PreviousState { get; private set; } = AnimationState.Idle;
         

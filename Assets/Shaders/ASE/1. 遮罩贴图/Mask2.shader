@@ -89,141 +89,141 @@ Shader "Example/URPUnlitShaderBasic"
     }
 }
 
-Shader "URPCustom/UnlitTexture"
-{
-    // 定义要在材质面板中显示的属性
-    Properties
-    {
-        _BaseMap ("Base Texture",2D) = "white"{}
-        _BaseColor("Base Color",Color)=(1,1,1,1)
-    }
-    
-    SubShader
-    {
-        Tags
-        {
-            "RenderPipeline"="UniversalPipeline"
-            "Queue"="Geometry"
-            "RenderType"="Opaque"
-        }
-
-        // 共享的 HLSL 代码。HLSLPROGRAM 块中会自动包括该内容。
-        HLSLINCLUDE
-        #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
-
-        CBUFFER_START(UnityPerMaterial)
-            float4 _BaseMap_ST;
-            half4 _BaseColor;
-        CBUFFER_END
-        ENDHLSL
-    
-        Pass
-        {
-            Tags{"LightMode"="UniversalForward"}
-
-             // HLSL代码块。Unity SRP使用HLSL语言。
-            HLSLPROGRAM 
-            #pragma vertex vert
-            #pragma fragment frag
-
-            // 使用Attributes结构体作为顶点着色器的输入。
-            struct Attributes
-            {
-                float4 positionOS : POSITION;  // positionOS变量包含物体空间中的顶点位置。
-                float2 uv : TEXCOORD;
-            };
-
-            // Varyings结构体作为像素着色器的输入。
-            struct Varyings
-            {
-                float4 positionHCS : SV_POSITION;
-                float2 uv : TEXCOORD;
-            };
-
-            TEXTURE2D(_BaseMap);
-            SAMPLER(sampler_BaseMap);
-
-            // 顶点着色器
-            Varyings vert(Attributes IN)
-            {
-                Varyings OUT;
-                // 将顶点位置从对象空间变换到齐次裁剪空间。
-                OUT.positionHCS = TransformObjectToHClip(IN.positionOS.xyz);
-                OUT.uv = TRANSFORM_TEX(IN.uv, _BaseMap);
-                return OUT;
-            }
-
-            // 像素着色器
-            half4  frag(Varyings IN):SV_Target
-            {   
-                half4 color = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, IN.uv);
-                return color * _BaseColor;
-            }
-            ENDHLSL      
-        }
-    }
-}
-
-Shader "Example/URPUnlitShaderBasic"
-{
-    // 定义要在材质面板中显示的属性
-    Properties
-    { }
-
-    // 包含Shader代码的SubShader块
-    SubShader
-    {
-        // 共享的 HLSL 代码。HLSLPROGRAM 块中会自动包括该内容。
-        HLSLINCLUDE
-        #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
-        ENDHLSL
-        
-        Tags 
-        { 
-            "RenderType" = "Opaque" 
-            "RenderPipeline" = "UniversalPipeline" 
-        }
-
-        Pass
-        {
-    
-            // HLSL代码块。Unity SRP使用HLSL语言。
-            HLSLPROGRAM
-            
-            #pragma vertex vert  // 这一行定义了顶点着色器的名称
-            #pragma fragment frag // 这一行定义了像素着色器的名称
-
-            // 使用Attributes结构体作为顶点着色器的输入。
-            struct Attributes
-            {
-                float4 positionOS   : POSITION; // positionOS变量包含物体空间中的顶点位置。
-                float2 uv : TEXCOORD0;
-            };
-
-            // Varyings结构体作为像素着色器的输入。
-            struct Varyings
-            {
-                float4 positionHCS  : SV_POSITION;
-                float2 uv : TEXCOORD0;
-            };
-
-            // 顶点着色器
-            Varyings vert(Attributes IN)
-            {
-                Varyings OUT;
-                // 将顶点位置从对象空间变换到齐次裁剪空间。
-                OUT.positionHCS = TransformObjectToHClip(IN.positionOS.xyz);
-                OUT.uv = IN.uv;
-                return OUT;
-            }
-
-            // 像素着色器
-            half4 frag(Varyings IN) : SV_Target
-            {
-                half4 customColor = half4(IN.uv.x, IN.uv.y, 0, 1);
-                return customColor;
-            }
-            ENDHLSL
-        }
-    }
-}
+//Shader "URPCustom/UnlitTexture"
+//{
+//    // 定义要在材质面板中显示的属性
+//    Properties
+//    {
+//        _BaseMap ("Base Texture",2D) = "white"{}
+//        _BaseColor("Base Color",Color)=(1,1,1,1)
+//    }
+//    
+//    SubShader
+//    {
+//        Tags
+//        {
+//            "RenderPipeline"="UniversalPipeline"
+//            "Queue"="Geometry"
+//            "RenderType"="Opaque"
+//        }
+//
+//        // 共享的 HLSL 代码。HLSLPROGRAM 块中会自动包括该内容。
+//        HLSLINCLUDE
+//        #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+//
+//        CBUFFER_START(UnityPerMaterial)
+//            float4 _BaseMap_ST;
+//            half4 _BaseColor;
+//        CBUFFER_END
+//        ENDHLSL
+//    
+//        Pass
+//        {
+//            Tags{"LightMode"="UniversalForward"}
+//
+//             // HLSL代码块。Unity SRP使用HLSL语言。
+//            HLSLPROGRAM 
+//            #pragma vertex vert
+//            #pragma fragment frag
+//
+//            // 使用Attributes结构体作为顶点着色器的输入。
+//            struct Attributes
+//            {
+//                float4 positionOS : POSITION;  // positionOS变量包含物体空间中的顶点位置。
+//                float2 uv : TEXCOORD;
+//            };
+//
+//            // Varyings结构体作为像素着色器的输入。
+//            struct Varyings
+//            {
+//                float4 positionHCS : SV_POSITION;
+//                float2 uv : TEXCOORD;
+//            };
+//
+//            TEXTURE2D(_BaseMap);
+//            SAMPLER(sampler_BaseMap);
+//
+//            // 顶点着色器
+//            Varyings vert(Attributes IN)
+//            {
+//                Varyings OUT;
+//                // 将顶点位置从对象空间变换到齐次裁剪空间。
+//                OUT.positionHCS = TransformObjectToHClip(IN.positionOS.xyz);
+//                OUT.uv = TRANSFORM_TEX(IN.uv, _BaseMap);
+//                return OUT;
+//            }
+//
+//            // 像素着色器
+//            half4  frag(Varyings IN):SV_Target
+//            {   
+//                half4 color = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, IN.uv);
+//                return color * _BaseColor;
+//            }
+//            ENDHLSL      
+//        }
+//    }
+//}
+//
+//Shader "Example/URPUnlitShaderBasic"
+//{
+//    // 定义要在材质面板中显示的属性
+//    Properties
+//    { }
+//
+//    // 包含Shader代码的SubShader块
+//    SubShader
+//    {
+//        // 共享的 HLSL 代码。HLSLPROGRAM 块中会自动包括该内容。
+//        HLSLINCLUDE
+//        #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+//        ENDHLSL
+//        
+//        Tags 
+//        { 
+//            "RenderType" = "Opaque" 
+//            "RenderPipeline" = "UniversalPipeline" 
+//        }
+//
+//        Pass
+//        {
+//    
+//            // HLSL代码块。Unity SRP使用HLSL语言。
+//            HLSLPROGRAM
+//            
+//            #pragma vertex vert  // 这一行定义了顶点着色器的名称
+//            #pragma fragment frag // 这一行定义了像素着色器的名称
+//
+//            // 使用Attributes结构体作为顶点着色器的输入。
+//            struct Attributes
+//            {
+//                float4 positionOS   : POSITION; // positionOS变量包含物体空间中的顶点位置。
+//                float2 uv : TEXCOORD0;
+//            };
+//
+//            // Varyings结构体作为像素着色器的输入。
+//            struct Varyings
+//            {
+//                float4 positionHCS  : SV_POSITION;
+//                float2 uv : TEXCOORD0;
+//            };
+//
+//            // 顶点着色器
+//            Varyings vert(Attributes IN)
+//            {
+//                Varyings OUT;
+//                // 将顶点位置从对象空间变换到齐次裁剪空间。
+//                OUT.positionHCS = TransformObjectToHClip(IN.positionOS.xyz);
+//                OUT.uv = IN.uv;
+//                return OUT;
+//            }
+//
+//            // 像素着色器
+//            half4 frag(Varyings IN) : SV_Target
+//            {
+//                half4 customColor = half4(IN.uv.x, IN.uv.y, 0, 1);
+//                return customColor;
+//            }
+//            ENDHLSL
+//        }
+//    }
+//}

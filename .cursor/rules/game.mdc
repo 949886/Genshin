@@ -13,6 +13,7 @@ This game is is an open-world action RPG like Genshin Impact.
 
 - Engine: Unity 6
 - Language: C#
+- Render Pipeline: URP
 - Used additional packages:
 	- Addressables
 	- Input System
