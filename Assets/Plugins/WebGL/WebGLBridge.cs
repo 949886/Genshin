@@ -1,5 +1,7 @@
 // Created by LunarEclipse on 2025-04-28 16:04.
 
+#if UNITY_WEBGL
+
 using System.Runtime.InteropServices;
 
 namespace Plugins.WebGL
@@ -12,3 +14,5 @@ namespace Plugins.WebGL
         [DllImport("__Internal")] public static extern int AddNumbers(int x, int y);
     }
 }
+
+#endif

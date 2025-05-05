@@ -8,7 +8,6 @@ namespace GI
     public class NahidaController : ThirdPersonCharacterController
     {
         [Header("Nahida")]
-        public Animator swingAnimator;
         public NahidaSwingShader swingShader;
         
         private NahidAnimationStateController _animationStateController;
@@ -49,13 +48,16 @@ namespace GI
         public void ShowSwing()
         {
             _animator.SetInteger("Show" ,1);
-            swingAnimator.gameObject.SetActive(true);
         }
         
         public void HideSwing()
         {
             _animator.SetInteger("Show" ,0);
-            swingAnimator.gameObject.SetActive(false);
+        }
+
+        public void Switch(string motion)
+        {
+            _animator.Play(motion);
         }
     }
 }

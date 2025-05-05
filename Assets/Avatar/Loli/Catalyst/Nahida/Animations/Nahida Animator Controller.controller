@@ -964,12 +964,12 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
-  m_ExitTime: 0.75
+  m_ExitTime: 0.8749211
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_CanTransitionToSelf: 0
 --- !u!114 &-1240667430523618583
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2538,7 +2538,6 @@ MonoBehaviour:
   weapon: {fileID: 0}
   windUpTime: 0
   attactLayer: 0
-  attackIndex: 0
 --- !u!1101 &8521675713814202623
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
