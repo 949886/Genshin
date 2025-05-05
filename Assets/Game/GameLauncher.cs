@@ -1,7 +1,5 @@
 using System;
 using System.Collections;
-using System.Threading.Tasks;
-using Cysharp.Threading.Tasks;
 using Luna;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -31,6 +29,11 @@ public class GameLauncher : MonoBehaviour
         };
         asset.onDownload += status => {
             Debug.Log($"[Assets] Downloading {asset.Address}: {status.Percent * 100}%");
+        };
+        asset.onError += (error) => {
+#if UNITY_WEBGL
+            Application.ExternalEval("alert('Error: " + error.Message + "')");
+#endif
         };
         var scene = await asset.Load();
     }
