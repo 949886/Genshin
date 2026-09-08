@@ -1,0 +1,12 @@
+{
+    "name": "Luna.World.Tests",
+    "references": [
+        "Luna.World",
+        "Unity.Addressables",
+        "Unity.ResourceManager",
+        "Unity.InputSystem"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ]
+}

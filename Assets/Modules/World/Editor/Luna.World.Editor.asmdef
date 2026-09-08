@@ -1,0 +1,5 @@
+{
+    "name": "Luna.World.Editor",
+    "references": ["Luna.World", "Unity.Addressables", "Unity.Addressables.Editor", "Unity.ResourceManager"],
+    "includePlatforms": ["Editor"]
+}
