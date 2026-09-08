@@ -1,0 +1,607 @@
+{
+  "name": "MeadowWorld",
+  "seed": 41729,
+  "chunkSize": 100,
+  "minX": -3,
+  "maxX": 3,
+  "minZ": -3,
+  "maxZ": 3,
+  "materials": [
+    {
+      "name": "Meadow",
+      "color": {
+        "r": 0.39,
+        "g": 0.58,
+        "b": 0.26,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "MeadowLight",
+      "color": {
+        "r": 0.44,
+        "g": 0.62,
+        "b": 0.29,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "MeadowDark",
+      "color": {
+        "r": 0.34,
+        "g": 0.52,
+        "b": 0.24,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "Bank",
+      "color": {
+        "r": 0.64,
+        "g": 0.61,
+        "b": 0.39,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "Cliff",
+      "color": {
+        "r": 0.48,
+        "g": 0.53,
+        "b": 0.47,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "Stone",
+      "color": {
+        "r": 0.57,
+        "g": 0.61,
+        "b": 0.55,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "StoneLight",
+      "color": {
+        "r": 0.7,
+        "g": 0.72,
+        "b": 0.61,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "Bark",
+      "color": {
+        "r": 0.3,
+        "g": 0.23,
+        "b": 0.16,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "Leaves",
+      "color": {
+        "r": 0.23,
+        "g": 0.43,
+        "b": 0.22,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "LeavesLight",
+      "color": {
+        "r": 0.4,
+        "g": 0.57,
+        "b": 0.24,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "LeavesGold",
+      "color": {
+        "r": 0.63,
+        "g": 0.65,
+        "b": 0.28,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "Grass",
+      "color": {
+        "r": 0.52,
+        "g": 0.65,
+        "b": 0.28,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "Flowers",
+      "color": {
+        "r": 0.91,
+        "g": 0.79,
+        "b": 0.48,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "Road",
+      "color": {
+        "r": 0.69,
+        "g": 0.61,
+        "b": 0.41,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "Water",
+      "color": {
+        "r": 0.17,
+        "g": 0.52,
+        "b": 0.54,
+        "a": 1
+      },
+      "smoothness": 0.5
+    },
+    {
+      "name": "Foam",
+      "color": {
+        "r": 0.61,
+        "g": 0.8,
+        "b": 0.74,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "Timber",
+      "color": {
+        "r": 0.46,
+        "g": 0.33,
+        "b": 0.21,
+        "a": 1
+      },
+      "smoothness": 0.12
+    },
+    {
+      "name": "TimberLight",
+      "color": {
+        "r": 0.62,
+        "g": 0.46,
+        "b": 0.28,
+        "a": 1
+      },
+      "smoothness": 0.12
+    }
+  ],
+  "chunks": [
+    {
+      "key": "Chunk_X-3_Y0_Z-3",
+      "x": -3,
+      "y": 0,
+      "z": -3,
+      "model": "Models/Chunk_X-3_Y0_Z-3.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-3_Y0_Z-2",
+      "x": -3,
+      "y": 0,
+      "z": -2,
+      "model": "Models/Chunk_X-3_Y0_Z-2.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-3_Y0_Z-1",
+      "x": -3,
+      "y": 0,
+      "z": -1,
+      "model": "Models/Chunk_X-3_Y0_Z-1.fbx",
+      "meshCount": 6
+    },
+    {
+      "key": "Chunk_X-3_Y0_Z0",
+      "x": -3,
+      "y": 0,
+      "z": 0,
+      "model": "Models/Chunk_X-3_Y0_Z0.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-3_Y0_Z1",
+      "x": -3,
+      "y": 0,
+      "z": 1,
+      "model": "Models/Chunk_X-3_Y0_Z1.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-3_Y0_Z2",
+      "x": -3,
+      "y": 0,
+      "z": 2,
+      "model": "Models/Chunk_X-3_Y0_Z2.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-3_Y0_Z3",
+      "x": -3,
+      "y": 0,
+      "z": 3,
+      "model": "Models/Chunk_X-3_Y0_Z3.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-2_Y0_Z-3",
+      "x": -2,
+      "y": 0,
+      "z": -3,
+      "model": "Models/Chunk_X-2_Y0_Z-3.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-2_Y0_Z-2",
+      "x": -2,
+      "y": 0,
+      "z": -2,
+      "model": "Models/Chunk_X-2_Y0_Z-2.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-2_Y0_Z-1",
+      "x": -2,
+      "y": 0,
+      "z": -1,
+      "model": "Models/Chunk_X-2_Y0_Z-1.fbx",
+      "meshCount": 6
+    },
+    {
+      "key": "Chunk_X-2_Y0_Z0",
+      "x": -2,
+      "y": 0,
+      "z": 0,
+      "model": "Models/Chunk_X-2_Y0_Z0.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-2_Y0_Z1",
+      "x": -2,
+      "y": 0,
+      "z": 1,
+      "model": "Models/Chunk_X-2_Y0_Z1.fbx",
+      "meshCount": 6
+    },
+    {
+      "key": "Chunk_X-2_Y0_Z2",
+      "x": -2,
+      "y": 0,
+      "z": 2,
+      "model": "Models/Chunk_X-2_Y0_Z2.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-2_Y0_Z3",
+      "x": -2,
+      "y": 0,
+      "z": 3,
+      "model": "Models/Chunk_X-2_Y0_Z3.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-1_Y0_Z-3",
+      "x": -1,
+      "y": 0,
+      "z": -3,
+      "model": "Models/Chunk_X-1_Y0_Z-3.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-1_Y0_Z-2",
+      "x": -1,
+      "y": 0,
+      "z": -2,
+      "model": "Models/Chunk_X-1_Y0_Z-2.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-1_Y0_Z-1",
+      "x": -1,
+      "y": 0,
+      "z": -1,
+      "model": "Models/Chunk_X-1_Y0_Z-1.fbx",
+      "meshCount": 6
+    },
+    {
+      "key": "Chunk_X-1_Y0_Z0",
+      "x": -1,
+      "y": 0,
+      "z": 0,
+      "model": "Models/Chunk_X-1_Y0_Z0.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-1_Y0_Z1",
+      "x": -1,
+      "y": 0,
+      "z": 1,
+      "model": "Models/Chunk_X-1_Y0_Z1.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-1_Y0_Z2",
+      "x": -1,
+      "y": 0,
+      "z": 2,
+      "model": "Models/Chunk_X-1_Y0_Z2.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X-1_Y0_Z3",
+      "x": -1,
+      "y": 0,
+      "z": 3,
+      "model": "Models/Chunk_X-1_Y0_Z3.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X0_Y0_Z-3",
+      "x": 0,
+      "y": 0,
+      "z": -3,
+      "model": "Models/Chunk_X0_Y0_Z-3.fbx",
+      "meshCount": 7
+    },
+    {
+      "key": "Chunk_X0_Y0_Z-2",
+      "x": 0,
+      "y": 0,
+      "z": -2,
+      "model": "Models/Chunk_X0_Y0_Z-2.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X0_Y0_Z-1",
+      "x": 0,
+      "y": 0,
+      "z": -1,
+      "model": "Models/Chunk_X0_Y0_Z-1.fbx",
+      "meshCount": 9
+    },
+    {
+      "key": "Chunk_X0_Y0_Z0",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "model": "Models/Chunk_X0_Y0_Z0.fbx",
+      "meshCount": 7
+    },
+    {
+      "key": "Chunk_X0_Y0_Z1",
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "model": "Models/Chunk_X0_Y0_Z1.fbx",
+      "meshCount": 7
+    },
+    {
+      "key": "Chunk_X0_Y0_Z2",
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "model": "Models/Chunk_X0_Y0_Z2.fbx",
+      "meshCount": 7
+    },
+    {
+      "key": "Chunk_X0_Y0_Z3",
+      "x": 0,
+      "y": 0,
+      "z": 3,
+      "model": "Models/Chunk_X0_Y0_Z3.fbx",
+      "meshCount": 7
+    },
+    {
+      "key": "Chunk_X1_Y0_Z-3",
+      "x": 1,
+      "y": 0,
+      "z": -3,
+      "model": "Models/Chunk_X1_Y0_Z-3.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X1_Y0_Z-2",
+      "x": 1,
+      "y": 0,
+      "z": -2,
+      "model": "Models/Chunk_X1_Y0_Z-2.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X1_Y0_Z-1",
+      "x": 1,
+      "y": 0,
+      "z": -1,
+      "model": "Models/Chunk_X1_Y0_Z-1.fbx",
+      "meshCount": 6
+    },
+    {
+      "key": "Chunk_X1_Y0_Z0",
+      "x": 1,
+      "y": 0,
+      "z": 0,
+      "model": "Models/Chunk_X1_Y0_Z0.fbx",
+      "meshCount": 6
+    },
+    {
+      "key": "Chunk_X1_Y0_Z1",
+      "x": 1,
+      "y": 0,
+      "z": 1,
+      "model": "Models/Chunk_X1_Y0_Z1.fbx",
+      "meshCount": 6
+    },
+    {
+      "key": "Chunk_X1_Y0_Z2",
+      "x": 1,
+      "y": 0,
+      "z": 2,
+      "model": "Models/Chunk_X1_Y0_Z2.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X1_Y0_Z3",
+      "x": 1,
+      "y": 0,
+      "z": 3,
+      "model": "Models/Chunk_X1_Y0_Z3.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X2_Y0_Z-3",
+      "x": 2,
+      "y": 0,
+      "z": -3,
+      "model": "Models/Chunk_X2_Y0_Z-3.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X2_Y0_Z-2",
+      "x": 2,
+      "y": 0,
+      "z": -2,
+      "model": "Models/Chunk_X2_Y0_Z-2.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X2_Y0_Z-1",
+      "x": 2,
+      "y": 0,
+      "z": -1,
+      "model": "Models/Chunk_X2_Y0_Z-1.fbx",
+      "meshCount": 6
+    },
+    {
+      "key": "Chunk_X2_Y0_Z0",
+      "x": 2,
+      "y": 0,
+      "z": 0,
+      "model": "Models/Chunk_X2_Y0_Z0.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X2_Y0_Z1",
+      "x": 2,
+      "y": 0,
+      "z": 1,
+      "model": "Models/Chunk_X2_Y0_Z1.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X2_Y0_Z2",
+      "x": 2,
+      "y": 0,
+      "z": 2,
+      "model": "Models/Chunk_X2_Y0_Z2.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X2_Y0_Z3",
+      "x": 2,
+      "y": 0,
+      "z": 3,
+      "model": "Models/Chunk_X2_Y0_Z3.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X3_Y0_Z-3",
+      "x": 3,
+      "y": 0,
+      "z": -3,
+      "model": "Models/Chunk_X3_Y0_Z-3.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X3_Y0_Z-2",
+      "x": 3,
+      "y": 0,
+      "z": -2,
+      "model": "Models/Chunk_X3_Y0_Z-2.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X3_Y0_Z-1",
+      "x": 3,
+      "y": 0,
+      "z": -1,
+      "model": "Models/Chunk_X3_Y0_Z-1.fbx",
+      "meshCount": 6
+    },
+    {
+      "key": "Chunk_X3_Y0_Z0",
+      "x": 3,
+      "y": 0,
+      "z": 0,
+      "model": "Models/Chunk_X3_Y0_Z0.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X3_Y0_Z1",
+      "x": 3,
+      "y": 0,
+      "z": 1,
+      "model": "Models/Chunk_X3_Y0_Z1.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X3_Y0_Z2",
+      "x": 3,
+      "y": 0,
+      "z": 2,
+      "model": "Models/Chunk_X3_Y0_Z2.fbx",
+      "meshCount": 5
+    },
+    {
+      "key": "Chunk_X3_Y0_Z3",
+      "x": 3,
+      "y": 0,
+      "z": 3,
+      "model": "Models/Chunk_X3_Y0_Z3.fbx",
+      "meshCount": 5
+    }
+  ],
+  "spawn": {
+    "x": 0,
+    "y": 14.260164438656396,
+    "z": 0
+  },
+  "camera": {
+    "x": -95,
+    "y": 88,
+    "z": -130
+  },
+  "cameraTarget": {
+    "x": 40,
+    "y": 8,
+    "z": 40
+  },
+  "statistics": {
+    "chunks": 49,
+    "trees": 1152,
+    "meshes": 268,
+    "triangles": 575220,
+    "maxBorderHeightError": 0
+  }
+}
