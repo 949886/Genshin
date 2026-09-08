@@ -374,30 +374,7 @@ namespace StylizedWater2
 
         public static void DrawRenderGraphError()
         {
-            #if UNITY_6000_0_OR_NEWER && URP
-            if (GraphicsSettings.GetRenderPipelineSettings<RenderGraphSettings>().enableRenderCompatibilityMode == false)
-            {
-                EditorGUILayout.HelpBox("Render Graph is not compatible." +
-                                        "\n\nBackwards compatibility mode must be enabled.", MessageType.Error);
-                
-                GUILayout.Space(-32);
-                using (new EditorGUILayout.HorizontalScope())
-                {
-                    GUILayout.FlexibleSpace();
-                    if (GUILayout.Button(new GUIContent("Enable", EditorGUIUtility.IconContent("d_tab_next").image), GUILayout.Width(60)))
-                    {
-                        GraphicsSettings.GetRenderPipelineSettings<RenderGraphSettings>().enableRenderCompatibilityMode = true;
 
-                        EditorUtility.DisplayDialog($"{AssetInfo.ASSET_NAME} v{AssetInfo.INSTALLED_VERSION}", 
-                            "Please note that this fallback option will be removed in a future Unity version, this version of Stylized Water will no longer be completely functional then." +
-                            "\n\n" +
-                            "A license upgrade for Unity 6+ support is available through Stylized Water 3, please check the documentation for current information.", "OK");
-                    }
-                    GUILayout.Space(8);
-                }
-                GUILayout.Space(11);
-            }
-            #endif
         }
     
         public static void DrawFooter()

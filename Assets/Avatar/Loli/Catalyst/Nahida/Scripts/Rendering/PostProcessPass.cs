@@ -5,7 +5,7 @@ using UnityEngine.Rendering.Universal;
 
 namespace Nahida.Rendering
 {
-    public class PostProcessPass : ScriptableRenderPass
+    public partial class PostProcessPass : ScriptableRenderPass
     {
         private Material _material;
 
@@ -28,8 +28,12 @@ namespace Nahida.Rendering
 
             base.profilingSampler = new ProfilingSampler(nameof(PostProcessPass));
             base.renderPassEvent = renderPassEvent;
+#if UNITY_6000_0_OR_NEWER
+            requiresIntermediateTexture = true;
+#endif
         }
 
+#if !UNITY_6000_4_OR_NEWER
         public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
         {
             var cameraType = renderingData.cameraData.cameraType;
@@ -50,7 +54,7 @@ namespace Nahida.Rendering
             _useBloom = bloomVolume.IsActive();
             _downSampleScale = bloomVolume.downSampleScale.value;
             SetupBuffer(ref renderingData);
-            SetupMaterial(bloomVolume, colorGradingVolume, ref renderingData);
+            SetupMaterial(bloomVolume, colorGradingVolume, renderingData.cameraData.cameraTargetDescriptor.height);
 
             var command = CommandBufferPool.Get();
             Render(command, ref renderingData);
@@ -77,9 +81,11 @@ namespace Nahida.Rendering
             }
         }
 
-        private void SetupMaterial(BloomVolume bloomVolume, ColorGradingVolume colorGradingVolume, ref RenderingData renderingData)
+#endif
+
+        private void SetupMaterial(BloomVolume bloomVolume, ColorGradingVolume colorGradingVolume, int height)
         {
-            float screenFactor = renderingData.cameraData.cameraTargetDescriptor.height / 1080f;
+            float screenFactor = height / 1080f;
 
             CoreUtils.SetKeyword(_material, "_BLOOM_COLOR", bloomVolume.mode.value == BloomMode.Color);
             CoreUtils.SetKeyword(_material, "_BLOOM_BRIGHTNESS", bloomVolume.mode.value == BloomMode.Brightness);
@@ -98,6 +104,7 @@ namespace Nahida.Rendering
             }
         }
 
+#if !UNITY_6000_4_OR_NEWER
         private void Render(CommandBuffer commandBuffer, ref RenderingData renderingData)
         {
             var source = renderingData.cameraData.renderer.cameraColorTargetHandle;
@@ -139,6 +146,8 @@ namespace Nahida.Rendering
             const RenderBufferStoreAction Save = RenderBufferStoreAction.Store;
             Blitter.BlitCameraTexture(commandBuffer, source, destination, Load, Save, _material, (int)pass);
         }
+
+#endif
 
         public void Dispose()
         {

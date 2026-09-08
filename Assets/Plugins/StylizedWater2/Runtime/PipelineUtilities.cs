@@ -674,7 +674,9 @@ namespace StylizedWater2
 
         public static bool RenderGraphEnabled()
         {
-            #if UNITY_6000_0_OR_NEWER
+            #if UNITY_6000_4_OR_NEWER
+            return true;
+            #elif UNITY_6000_0_OR_NEWER
             return UnityEngine.Rendering.GraphicsSettings.GetRenderPipelineSettings<RenderGraphSettings>().enableRenderCompatibilityMode == false;
             #else
             return false;

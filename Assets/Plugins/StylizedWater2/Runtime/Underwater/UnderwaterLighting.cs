@@ -48,6 +48,16 @@ namespace StylizedWater2.UnderwaterRendering
         }
 
         private static VisibleLight mainLight;
+#if UNITY_6000_0_OR_NEWER
+        public static void PassMainLight(CommandBuffer cmd, UniversalLightData lightData)
+        {
+            if (lightData.mainLightIndex < 0) return;
+            var light = lightData.visibleLights[lightData.mainLightIndex];
+            if (light.lightType == LightType.Directional && light.light != null)
+                cmd.SetGlobalMatrix(unity_WorldToLight,
+                    Matrix4x4.TRS(light.light.transform.position, light.light.transform.rotation, Vector3.one).inverse);
+        }
+#endif
         public static void PassMainLight(CommandBuffer cmd, RenderingData renderingData)
         {
             // When no lights are visible, main light will be set to -1.

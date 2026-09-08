@@ -8,7 +8,7 @@ using UnityEngine.Rendering.Universal;
 
 namespace StylizedWater2
 {
-    public class DisplacementPrePass : ScriptableRenderPass
+    public partial class DisplacementPrePass : ScriptableRenderPass
     {
         private const string profilerTag = "Water Displacement Prepass";
         private static readonly ProfilingSampler profilerSampler = new ProfilingSampler(profilerTag);
@@ -121,14 +121,12 @@ namespace StylizedWater2
             cmd.SetGlobalVector(_WaterDisplacementCoords, rendererCoords);
         }
         
-        #if UNITY_6000_0_OR_NEWER //Silence warning spam
-        public override void RecordRenderGraph(UnityEngine.Rendering.RenderGraphModule.RenderGraph renderGraph, ContextContainer frameData) { }
-        #endif
 
         #if UNITY_6000_0_OR_NEWER
         #pragma warning disable CS0672
         #pragma warning disable CS0618
         #endif
+#if !UNITY_6000_4_OR_NEWER
         public override void Configure(CommandBuffer cmd, RenderTextureDescriptor cameraTextureDescriptor)
         {
             if (resolution != m_resolution || renderTarget == null)
@@ -151,7 +149,9 @@ namespace StylizedWater2
             ConfigureTarget(renderTarget);
             ConfigureClear(ClearFlag.Color, targetClearColor);
         }
+#endif
         
+#if !UNITY_6000_4_OR_NEWER
         public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
         {
             CommandBuffer cmd = CommandBufferPool.Get();
@@ -188,6 +188,7 @@ namespace StylizedWater2
             context.ExecuteCommandBuffer(cmd);
             CommandBufferPool.Release(cmd);
         }
+#endif
         
         public void Dispose()
         {

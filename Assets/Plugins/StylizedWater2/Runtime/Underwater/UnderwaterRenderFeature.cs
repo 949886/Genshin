@@ -70,15 +70,7 @@ namespace StylizedWater2.UnderwaterRendering
             #endif
         }
         
-        void OnEnable()
-        {
-            #if UNITY_6000_0_OR_NEWER && UNITY_EDITOR
-            if (PipelineUtilities.RenderGraphEnabled())
-            {
-                Debug.LogError($"[{this.name}] Render Graph is enabled but is not supported. Enable \"Compatibility Mode\" in your project's Graphics Settings as a workaround.");
-            }
-            #endif
-        }
+
         
         public override void Create()
         {

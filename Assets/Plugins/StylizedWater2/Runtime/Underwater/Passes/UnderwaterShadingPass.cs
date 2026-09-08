@@ -9,7 +9,7 @@ using UnityEngine.Rendering.Universal;
 
 namespace StylizedWater2.UnderwaterRendering
 {
-    class UnderwaterShadingPass : RenderPass
+    partial class UnderwaterShadingPass : RenderPass
     {
         private const string ProfilerTag = "Underwater Rendering: Shading";
         private static readonly ProfilingSampler m_ProfilingSampler = new ProfilingSampler(ProfilerTag);
@@ -25,6 +25,12 @@ namespace StylizedWater2.UnderwaterRendering
         public override void Setup(UnderwaterRenderFeature.Settings settings, ScriptableRenderer renderer)
         {
             base.Setup(settings, renderer);
+#if UNITY_6000_0_OR_NEWER
+            var inputs = ScriptableRenderPassInput.Depth | ScriptableRenderPassInput.Color;
+            if (settings.directionalCaustics && settings.accurateDirectionalCaustics)
+                inputs |= ScriptableRenderPassInput.Normal;
+            ConfigureInput(inputs);
+#endif
             
             renderer.EnqueuePass(this);
         }
@@ -33,6 +39,7 @@ namespace StylizedWater2.UnderwaterRendering
         #pragma warning disable CS0672
         #pragma warning disable CS0618
         #endif
+#if !UNITY_6000_4_OR_NEWER
         public override void Configure(CommandBuffer cmd, RenderTextureDescriptor cameraTextureDescriptor)
         {
             base.Configure(cmd, cameraTextureDescriptor);
@@ -62,7 +69,9 @@ namespace StylizedWater2.UnderwaterRendering
             CoreUtils.SetKeyword(Material, UnderwaterRenderer.TRANSLUCENCY_KEYWORD, renderFeature.keywordStates.translucency);
             CoreUtils.SetKeyword(Material, UnderwaterRenderer.CAUSTICS_KEYWORD, renderFeature.keywordStates.caustics);
         }
+#endif
 
+#if !UNITY_6000_4_OR_NEWER
         public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
         {
             var cmd = CommandBufferPool.Get();
@@ -79,6 +88,7 @@ namespace StylizedWater2.UnderwaterRendering
             context.ExecuteCommandBuffer(cmd);
             CommandBufferPool.Release(cmd);
         }
+#endif
         
         protected override void Cleanup(CommandBuffer cmd)
         {

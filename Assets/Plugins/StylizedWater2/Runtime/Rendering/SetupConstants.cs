@@ -6,7 +6,7 @@ using UnityEngine.Rendering.Universal.Internal;
 
 namespace StylizedWater2
 {
-    public class SetupConstants : ScriptableRenderPass
+    public partial class SetupConstants : ScriptableRenderPass
     {
         private static readonly int _EnableDirectionalCaustics = Shader.PropertyToID("_EnableDirectionalCaustics");
         private static readonly int CausticsProjection = Shader.PropertyToID("CausticsProjection");
@@ -30,20 +30,23 @@ namespace StylizedWater2
         {
             this.settings = renderFeature;
             m_directionalCaustics = settings.directionalCaustics;
+#if UNITY_6000_0_OR_NEWER
+            ConfigureInput(settings.screenSpaceReflectionSettings.enable
+                ? ScriptableRenderPassInput.Color | ScriptableRenderPassInput.Depth
+                : ScriptableRenderPassInput.None);
+#endif
         }
 
         #if UNITY_2020_2_OR_NEWER
         private ScriptableRenderPassInput requirements;
         #endif
 
-        #if UNITY_6000_0_OR_NEWER //Silence warning spam
-        public override void RecordRenderGraph(UnityEngine.Rendering.RenderGraphModule.RenderGraph renderGraph, ContextContainer frameData) { }
-        #endif
 
         #if UNITY_6000_0_OR_NEWER
         #pragma warning disable CS0672
         #pragma warning disable CS0618
         #endif
+#if !UNITY_6000_4_OR_NEWER
         public override void Configure(CommandBuffer cmd, RenderTextureDescriptor cameraTextureDescriptor)
         {
             #if UNITY_2020_2_OR_NEWER
@@ -67,7 +70,9 @@ namespace StylizedWater2
             ConfigureInput(requirements);
             #endif
         }
+#endif
 
+#if !UNITY_6000_4_OR_NEWER
         public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
         {
             CommandBuffer cmd = CommandBufferPool.Get();
@@ -102,6 +107,7 @@ namespace StylizedWater2
             context.ExecuteCommandBuffer(cmd);
             CommandBufferPool.Release(cmd);
         }
+#endif
 
         public override void OnCameraCleanup(CommandBuffer cmd)
         {

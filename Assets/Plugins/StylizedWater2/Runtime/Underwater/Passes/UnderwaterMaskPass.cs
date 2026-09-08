@@ -10,7 +10,7 @@ using UnityEngine.Rendering.Universal;
 
 namespace StylizedWater2.UnderwaterRendering
 {
-    public class UnderwaterMaskPass : ScriptableRenderPass
+    public partial class UnderwaterMaskPass : ScriptableRenderPass
     {
         private const string ProfilerTag = "Underwater Rendering: Mask";
         private static ProfilingSampler m_ProfilingSampler = new ProfilingSampler(ProfilerTag);
@@ -38,13 +38,11 @@ namespace StylizedWater2.UnderwaterRendering
             renderer.EnqueuePass(this);
         }
         
-        #if UNITY_6000_0_OR_NEWER //Silence warning spam
-        public override void RecordRenderGraph(UnityEngine.Rendering.RenderGraphModule.RenderGraph renderGraph, ContextContainer frameData) { }
-        #endif
 
 
         #pragma warning disable CS0672
         #pragma warning disable CS0618
+#if !UNITY_6000_4_OR_NEWER
         public override void Configure(CommandBuffer cmd, RenderTextureDescriptor cameraTextureDescriptor)
         {
             cameraTextureDescriptor.width /= DOWNSAMPLES;
@@ -64,7 +62,9 @@ namespace StylizedWater2.UnderwaterRendering
             ConfigureTarget(waterMaskRT);
             ConfigureClear(ClearFlag.All, Color.clear);
         }
+#endif
 
+#if !UNITY_6000_4_OR_NEWER
         public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
         {
             var cmd = CommandBufferPool.Get();
@@ -77,6 +77,7 @@ namespace StylizedWater2.UnderwaterRendering
             context.ExecuteCommandBuffer(cmd);
             CommandBufferPool.Release(cmd);
         }
+#endif
         
         public void Dispose()
         {

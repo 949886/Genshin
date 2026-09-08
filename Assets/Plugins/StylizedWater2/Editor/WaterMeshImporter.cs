@@ -33,13 +33,19 @@ namespace StylizedWater2
         //Handles correct behaviour when double-clicking a .watermesh asset assigned to a field
         //Otherwise the OS prompts to open it
         [UnityEditor.Callbacks.OnOpenAsset]
+#if UNITY_6000_4_OR_NEWER
+        public static bool OnOpenAsset(EntityId instanceID, int line)
+        {
+            Object target = EditorUtility.EntityIdToObject(instanceID);
+#else
         public static bool OnOpenAsset(int instanceID, int line)
         {
             Object target = EditorUtility.InstanceIDToObject(instanceID);
+#endif
 
             if (target is Mesh)
             {
-                var path = AssetDatabase.GetAssetPath(instanceID);
+                var path = AssetDatabase.GetAssetPath(target);
                 
                 if (Path.GetExtension(path) != "." + FILE_EXTENSION) return false;
 

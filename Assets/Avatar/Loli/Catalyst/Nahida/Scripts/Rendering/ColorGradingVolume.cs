@@ -5,7 +5,12 @@ using UnityEngine.Rendering.Universal;
 namespace Nahida.Rendering
 {
     [Serializable]
+#if UNITY_2023_1_OR_NEWER
+    [VolumeComponentMenu("Custom/ColorGrading")]
+    [SupportedOnRenderPipeline(typeof(UniversalRenderPipelineAsset))]
+#else
     [VolumeComponentMenuForRenderPipeline("Custom/ColorGrading", typeof(UniversalRenderPipeline))]
+#endif
     public class ColorGradingVolume : VolumeComponent, IPostProcessComponent
     {
         public BoolParameter useTonemapping = new BoolParameter(false);

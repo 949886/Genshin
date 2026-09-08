@@ -6,7 +6,12 @@ using UnityEngine.Rendering.Universal;
 namespace Nahida.Rendering
 {
     [Serializable]
+#if UNITY_2023_1_OR_NEWER
+    [VolumeComponentMenu("Custom/Bloom")]
+    [SupportedOnRenderPipeline(typeof(UniversalRenderPipelineAsset))]
+#else
     [VolumeComponentMenuForRenderPipeline("Custom/Bloom", typeof(UniversalRenderPipeline))]
+#endif
     public class BloomVolume : VolumeComponent, IPostProcessComponent
     {
         public VolumeParameter<BloomMode> mode = new VolumeParameter<BloomMode>();

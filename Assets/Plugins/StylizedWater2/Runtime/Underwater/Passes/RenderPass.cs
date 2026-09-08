@@ -11,7 +11,7 @@ using RenderTarget = UnityEngine.Rendering.RenderTargetIdentifier;
 
 namespace StylizedWater2.UnderwaterRendering
 {
-    public class RenderPass : ScriptableRenderPass
+    public partial class RenderPass : ScriptableRenderPass
     {
         protected UnderwaterResources resources;
         protected UnderwaterRenderFeature.Settings settings;
@@ -61,19 +61,18 @@ namespace StylizedWater2.UnderwaterRendering
             if(shader) Material = CoreUtils.CreateEngineMaterial(shader);
         }
         
-        #if UNITY_6000_0_OR_NEWER //Silence warning spam
-        public override void RecordRenderGraph(UnityEngine.Rendering.RenderGraphModule.RenderGraph renderGraph, ContextContainer frameData) { }
-        #endif
 
         #if UNITY_6000_0_OR_NEWER
         #pragma warning disable CS0672
         #pragma warning disable CS0618
         #endif
+#if !UNITY_6000_4_OR_NEWER
         public override void Configure(CommandBuffer cmd, RenderTextureDescriptor cameraTextureDescriptor)
         {
             //At this point, the target is unbound. At least for the first frame
             //ConfigureTarget(cameraColorTarget, cameraDepthTarget);
         }
+#endif
 
         protected void AllocateColorCopy(RenderTextureDescriptor cameraTextureDescriptor)
         {
@@ -145,6 +144,7 @@ namespace StylizedWater2.UnderwaterRendering
             #endif
         }
 
+#if !UNITY_6000_4_OR_NEWER
         private void GetColorTarget(ref RenderingData renderingData)
         {
             #if UNITY_2020_2_OR_NEWER //URP 10+
@@ -159,11 +159,13 @@ namespace StylizedWater2.UnderwaterRendering
             #endif
             #endif
         }
+#endif
 
         private static readonly int _BlitScaleBiasRt = Shader.PropertyToID("_BlitScaleBiasRt");
         private static readonly int _BlitScaleBias = Shader.PropertyToID("_BlitScaleBias");
         private static readonly Vector4 ScaleBias = new Vector4(1, 1, 0, 0);
 
+#if !UNITY_6000_4_OR_NEWER
         protected void BlitToCamera(CommandBuffer cmd, ref RenderingData renderingData, bool copyColor)
         {
             //Required for vertex shader
@@ -213,13 +215,16 @@ namespace StylizedWater2.UnderwaterRendering
                 #endif
             }
         }
+#endif
         
+#if !UNITY_6000_4_OR_NEWER
         public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
         {
             GetColorTarget(ref renderingData);
 
             CheckVR(ref renderingData);
         }
+#endif
         
 #if UNITY_2020_1_OR_NEWER //URP 9+
         public override void OnCameraCleanup(CommandBuffer cmd)

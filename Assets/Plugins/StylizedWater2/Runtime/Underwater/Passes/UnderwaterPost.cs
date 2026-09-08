@@ -9,7 +9,7 @@ using UnityEngine.Rendering.Universal;
 
 namespace StylizedWater2.UnderwaterRendering
 {
-    class UnderwaterPost : RenderPass
+    partial class UnderwaterPost : RenderPass
     {
         private const string ProfilerTag = "Underwater Rendering: Post Processing";
         private static ProfilingSampler m_ProfilingSampler = new ProfilingSampler(ProfilerTag);
@@ -29,6 +29,9 @@ namespace StylizedWater2.UnderwaterRendering
         public override void Setup(UnderwaterRenderFeature.Settings settings, ScriptableRenderer renderer)
         {
             base.Setup(settings, renderer);
+#if UNITY_6000_0_OR_NEWER
+            requiresIntermediateTexture = true;
+#endif
             
             renderer.EnqueuePass(this);
         }
@@ -37,6 +40,7 @@ namespace StylizedWater2.UnderwaterRendering
         #pragma warning disable CS0672
         #pragma warning disable CS0618
         #endif
+#if !UNITY_6000_4_OR_NEWER
         public override void Configure(CommandBuffer cmd, RenderTextureDescriptor cameraTextureDescriptor)
         {
             base.Configure(cmd, cameraTextureDescriptor);
@@ -52,7 +56,9 @@ namespace StylizedWater2.UnderwaterRendering
             CoreUtils.SetKeyword(Material, DistortionSSKeyword, UnderwaterRenderer.Instance.enableDistortion && settings.allowDistortion && settings.distortionMode == UnderwaterRenderFeature.Settings.DistortionMode.ScreenSpace);
             CoreUtils.SetKeyword(Material, DistortionWSKeyword, UnderwaterRenderer.Instance.enableDistortion && settings.allowDistortion && settings.distortionMode == UnderwaterRenderFeature.Settings.DistortionMode.CameraSpace);
         }
+#endif
 
+#if !UNITY_6000_4_OR_NEWER
         public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
         {
             var cmd = CommandBufferPool.Get();
@@ -67,9 +73,10 @@ namespace StylizedWater2.UnderwaterRendering
             context.ExecuteCommandBuffer(cmd);
             CommandBufferPool.Release(cmd);
         }
+#endif
     }
     
-    class DistortionSpherePass : ScriptableRenderPass
+    partial class DistortionSpherePass : ScriptableRenderPass
     {
         private const string ProfilerTag = "Underwater Rendering: Post Processing (Distortion)";
         private static ProfilingSampler m_ProfilingSampler = new ProfilingSampler(ProfilerTag);
@@ -88,14 +95,12 @@ namespace StylizedWater2.UnderwaterRendering
             this.geoSphere = resources.geoSphere;
         }
 
-        #if UNITY_6000_0_OR_NEWER //Silence warning spam
-        public override void RecordRenderGraph(UnityEngine.Rendering.RenderGraphModule.RenderGraph renderGraph, ContextContainer frameData) { }
-        #endif
         
         #if UNITY_6000_0_OR_NEWER
         #pragma warning disable CS0672
         #pragma warning disable CS0618
         #endif
+#if !UNITY_6000_4_OR_NEWER
         public override void Configure(CommandBuffer cmd, RenderTextureDescriptor cameraTextureDescriptor)
         {
             cameraTextureDescriptor.colorFormat = RenderTextureFormat.R8;
@@ -116,7 +121,9 @@ namespace StylizedWater2.UnderwaterRendering
             ConfigureTarget(distortionSphereRT);
             ConfigureClear(ClearFlag.Color, Color.clear);
         }
+#endif
 
+#if !UNITY_6000_4_OR_NEWER
         public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
         {
             var cmd = CommandBufferPool.Get();
@@ -132,6 +139,7 @@ namespace StylizedWater2.UnderwaterRendering
             context.ExecuteCommandBuffer(cmd);
             CommandBufferPool.Release(cmd);
         }
+#endif
         
         public void Dispose()
         {

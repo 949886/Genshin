@@ -90,7 +90,11 @@ namespace StylizedWater2
         [MenuItem("Assets/Create/Water/Mesh")]
         private static void CreateWaterPlaneAsset()
         {
+#if UNITY_6000_4_OR_NEWER
+            ProjectWindowUtil.CreateAssetWithTextContent("New Watermesh.watermesh", "");
+#else
             ProjectWindowUtil.CreateAssetWithContent("New Watermesh.watermesh", "");
+#endif
         }
         
         [MenuItem("CONTEXT/Transform/Align To Waves")]

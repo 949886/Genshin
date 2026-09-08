@@ -9,7 +9,7 @@ using UnityEngine.Rendering.Universal;
 
 namespace StylizedWater2.UnderwaterRendering
 {
-    public class UnderwaterLinePass : ScriptableRenderPass
+    public partial class UnderwaterLinePass : ScriptableRenderPass
     {
         private const string ProfilerTag = "Underwater line Rendering";
         private static ProfilingSampler m_ProfilingSampler = new ProfilingSampler(ProfilerTag);
@@ -28,14 +28,12 @@ namespace StylizedWater2.UnderwaterRendering
             Material = UnderwaterRenderFeature.CreateMaterial(ProfilerTag, renderFeature.resources.waterlineShader);
         }
 
-        #if UNITY_6000_0_OR_NEWER //Silence warning spam
-        public override void RecordRenderGraph(UnityEngine.Rendering.RenderGraphModule.RenderGraph renderGraph, ContextContainer frameData) { }
-        #endif
 
         #if UNITY_6000_0_OR_NEWER
         #pragma warning disable CS0672
         #pragma warning disable CS0618
         #endif
+#if !UNITY_6000_4_OR_NEWER
 #if UNITY_2020_1_OR_NEWER //URP 9+
         public override void OnCameraSetup(CommandBuffer cmd, ref RenderingData renderingData)
 #else
@@ -48,7 +46,9 @@ namespace StylizedWater2.UnderwaterRendering
             CoreUtils.SetKeyword(Material, UnderwaterRenderer.TRANSLUCENCY_KEYWORD, renderFeature.keywordStates.translucency);
             CoreUtils.SetKeyword(Material, UnderwaterRenderer.WAVES_KEYWORD, renderFeature.keywordStates.waves);
         }
+#endif
         
+#if !UNITY_6000_4_OR_NEWER
         public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
         {
             var cmd = CommandBufferPool.Get();
@@ -65,6 +65,7 @@ namespace StylizedWater2.UnderwaterRendering
             context.ExecuteCommandBuffer(cmd);
             CommandBufferPool.Release(cmd);
         }
+#endif
     }
 }
 #endif
