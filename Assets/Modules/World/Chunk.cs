@@ -1,9 +1,11 @@
 // Created by LunarEclipse on 2024-2-13 17:35.
 
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.ResourceManagement.ResourceLocations;
 using Object = UnityEngine.Object;
 
 namespace Luna.World
@@ -13,11 +15,15 @@ namespace Luna.World
         public readonly float size;
         public readonly GameObject fallback;
         
-        public Vector3 Position => GameObject.transform.position;
+        public Vector3 Position => GameObject != null ? GameObject.transform.position : (Vector3) Coords * size;
         
         public Vector3Int Coords { get; private set; }
         public GameObject GameObject { get; private set; }
         public ChunkState State { get; private set; } = ChunkState.Unloaded;
+
+        private AsyncOperationHandle<IList<IResourceLocation>> _locationsHandle;
+        private AsyncOperationHandle<GameObject> _assetHandle;
+        private int _loadVersion;
 
         public Chunk(float size, Vector3Int coords, GameObject fallback = null)
         {
@@ -28,43 +34,86 @@ namespace Luna.World
 
         public void Unload()
         {
+            // Invalidates callbacks from requests that are still in flight.
+            _loadVersion++;
+            State = ChunkState.Unloaded;
             if (GameObject != null)
             {
                 Object.Destroy(GameObject);
                 GameObject = null;
-                State = ChunkState.Unloaded;
             }
+
+            if (_locationsHandle.IsValid()) Addressables.Release(_locationsHandle);
+            _locationsHandle = default;
+            if (_assetHandle.IsValid()) Addressables.Release(_assetHandle);
+            _assetHandle = default;
         }
         
         public void Load(Action<GameObject> onLoaded = null)
         {
-            if (State == ChunkState.Loaded) return;
+            if (State != ChunkState.Unloaded) return;
             
             var chunkName = $"Chunk_X{Coords.x}_Y{Coords.y}_Z{Coords.z}";
-            var handle = Addressables.LoadAssetAsync<GameObject>(chunkName);
+            var loadVersion = ++_loadVersion;
             State = ChunkState.Loading;
-            handle.Completed += operation =>
+
+            // Missing cells are normal in a sparse world. A location lookup returns
+            // an empty list instead of raising InvalidKeyException for these cells.
+            _locationsHandle = Addressables.LoadResourceLocationsAsync(chunkName, typeof(GameObject));
+            _locationsHandle.Completed += locations =>
             {
-                if (operation.Status == AsyncOperationStatus.Succeeded)
+                if (loadVersion != _loadVersion) return;
+
+                IResourceLocation location = null;
+                if (locations.Status == AsyncOperationStatus.Succeeded)
                 {
-                    var prefab = operation.Result;
-                    GameObject = Object.Instantiate(prefab, new Vector3(Coords.x * size, Coords.y * size, Coords.z * size), Quaternion.identity);
-                    onLoaded?.Invoke(GameObject);
+                    if (locations.Result.Count > 0) location = locations.Result[0];
                 }
                 else
                 {
-                    Debug.LogWarning($"Failed to load prefab {chunkName}, using fallback prefab instead.");
-                    if (fallback == null)
-                    {
-                        Debug.LogError($"No fallback prefab provided for {chunkName}");
-                        return;
-                    }
-                    GameObject = Object.Instantiate(fallback, new Vector3(Coords.x * size, Coords.y * size, Coords.z * size), Quaternion.identity);
-                    onLoaded?.Invoke(GameObject);
+                    Debug.LogWarning($"Failed to locate {chunkName}: {locations.OperationException}");
                 }
 
-                State = ChunkState.Loaded;
+                Addressables.Release(locations);
+                _locationsHandle = default;
+
+                if (location == null)
+                {
+                    InstantiateChunk(fallback, onLoaded);
+                    return;
+                }
+
+                _assetHandle = Addressables.LoadAssetAsync<GameObject>(location);
+                _assetHandle.Completed += operation =>
+                {
+                    if (loadVersion != _loadVersion) return;
+
+                    if (operation.Status == AsyncOperationStatus.Succeeded && operation.Result != null)
+                    {
+                        InstantiateChunk(operation.Result, onLoaded);
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"Failed to load prefab {chunkName}, using fallback prefab instead.");
+                        Addressables.Release(operation);
+                        _assetHandle = default;
+                        InstantiateChunk(fallback, onLoaded);
+                    }
+                };
             };
+        }
+
+        private void InstantiateChunk(GameObject prefab, Action<GameObject> onLoaded)
+        {
+            if (prefab == null)
+            {
+                State = ChunkState.Empty;
+                return;
+            }
+
+            GameObject = Object.Instantiate(prefab, (Vector3) Coords * size, Quaternion.identity);
+            State = ChunkState.Loaded;
+            onLoaded?.Invoke(GameObject);
         }
         
         public void Reload(Vector3Int coords, Action<GameObject> onLoaded = null)
@@ -79,6 +128,7 @@ namespace Luna.World
             Unloaded,
             Loading,
             Loaded,
+            Empty,
         }
     }
 }

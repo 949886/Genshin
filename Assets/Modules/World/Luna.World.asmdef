@@ -1,0 +1,8 @@
+{
+    "name": "Luna.World",
+    "references": [
+        "Unity.Addressables",
+        "Unity.ResourceManager",
+        "Unity.InputSystem"
+    ]
+}
